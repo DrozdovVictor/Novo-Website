@@ -1,0 +1,133 @@
+@import '../../main/css/style.css';
+@import '../../../../Ui_Kit/scss/variables/sellerRegistration/variables';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@mixin flexColumnPattern($rg: 0px, $ai: center) {
+  display: flex;
+  flex-direction: column;
+  align-items: $ai;
+  row-gap: $rg;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+  color: $heading-text-default-color;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 67.5px;
+}
+
+h6 {
+  font-weight: 600;
+}
+
+p {
+  color: $text-default-color;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+p.big {
+  font-size: 16px;
+}
+h4,
+h2 {
+  font-family: 'IBM Plex Sans', 'Manrope', sans-serif;
+}
+
+body {
+  background-color: $page-bg-color;
+  font-family: none;
+}
+
+.header {
+  background-color: $elements-bg-color;
+
+  &__logo {
+    color: $heading-text-default-color;
+    font-weight: 700;
+  }
+
+  &__login.button {
+    border-color: $main-green;
+    background-color: $main-green;
+  }
+}
+
+main {
+  padding: 90px 0px 160px;
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.form {
+  padding: 60px 60px 70px;
+  background-color: $elements-bg-color;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__head {
+    @include flexColumnPattern(8px);
+  }
+
+  &__head + &__content {
+    margin-top: 40px;
+  }
+
+  &__content {
+    @include flexColumnPattern(40px, flex-start);
+
+    &-part {
+      width: 800px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+    }
+
+    &-input-wrapper {
+      width: calc((100% - 20px) / 2);
+      @include flexColumnPattern(8px, flex-start);
+    }
+
+    &-input {
+      padding: 12px 16px;
+      border: 2px solid $text-default-color;
+      outline: 0px;
+      font-weight: 600;
+      color: $black;
+      transition: 0.3s;
+    }
+
+    &-input:focus {
+      border: 2px solid $black;
+    }
+  }
+
+  &__content + &__condition {
+    margin-top: 24px;
+  }
+
+  &__condition + &__button {
+    margin-top: 50px;
+  }
+
+  &__button:hover {
+    color: $main-green;
+  }
+}
+
+.footer {
+  background-color: $footer-bg-color;
+}

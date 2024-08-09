@@ -1,0 +1,34 @@
+@import '/assets/styles/buyerRegistration/css/media.css';
+@import '../../../../Ui_Kit/scss/variables/sellerRegistration/variables';
+
+@media ($laptop) {
+}
+
+@media ($largeMobile) {
+  .header__nav {
+    height: 72px;
+  }
+
+  .header__login.button {
+    font-size: 14px;
+  }
+
+  .form {
+    padding: 60px 30px 50px;
+  }
+}
+
+@media ($mobile) {
+  .header__nav {
+    height: 65px;
+  }
+
+  .form {
+    padding: 40px 25px 25px;
+
+    &__head-heading {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}

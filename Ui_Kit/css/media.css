@@ -1,0 +1,55 @@
+/* Variables */
+@media (max-width: 1919px) {
+  h1 {
+    font-size: 50px;
+    line-height: 75px;
+  }
+  h3 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 999px) {
+  h1 {
+    font-size: 45px;
+    line-height: 67px;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 35px;
+    line-height: 52px;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 479px) {
+  h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  h2 {
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+  }
+  h5 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}/*# sourceMappingURL=media.css.map */

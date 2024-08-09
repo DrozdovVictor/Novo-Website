@@ -1,0 +1,97 @@
+@import '/assets/styles/sellerRegistration/css/style.css';
+/* Variables */
+p {
+  font-weight: 500;
+}
+
+.header__logo {
+  font-size: 30px;
+  color: rgb(0, 150, 97);
+}
+
+.header__login.button {
+  border-color: rgba(70, 137, 102, 0.06);
+  background-color: rgba(70, 137, 102, 0.06);
+  color: rgb(0, 150, 97);
+}
+
+.header__login.button:hover {
+  border-color: rgb(0, 150, 97);
+  background-color: rgba(70, 137, 102, 0.06);
+}
+
+main {
+  padding: 90px 0px 150px;
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  padding: 60px 90px 70px;
+}
+.form__head-heading {
+  font-weight: 900;
+}
+.form__head-text {
+  max-width: 215px;
+  text-align: center;
+}
+.form__head + .form__content {
+  margin-top: 40px;
+}
+.form__content {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+}
+.form__content-input-wrapper {
+  width: 100%;
+  row-gap: 4px;
+}
+.form__content + .form__condition {
+  margin-top: 20px;
+}
+.form__condition {
+  width: 420px;
+}
+.form__condition-input-text {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+}
+.form__condition-input-text::before {
+  top: 3px;
+}
+.form__condition-input:checked + .form__condition-input-text::after {
+  top: 0px;
+}
+.form__condition + .form__button {
+  margin-top: 40px;
+}
+
+.form + .logIn {
+  margin-top: 30px;
+}
+
+.logIn {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.logIn__text {
+  font-size: 16px;
+  color: rgb(37, 37, 37);
+  font-weight: 600;
+}
+.logIn__link {
+  text-transform: uppercase;
+  color: rgb(0, 150, 97);
+  font-size: 16px;
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */

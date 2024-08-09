@@ -1,0 +1,58 @@
+@import '/assets/styles/seller/item/css/media.css';
+@import '/assets/styles/customer/main/css/media.css';
+@import '../../../../../Ui_Kit/scss/variables/main/variables';
+
+@media ($laptop) {
+  .main__content-recent-ads {
+    nav {
+      display: flex;
+    }
+  }
+}
+
+@media ($tablet) {
+  .main__item-feedback {
+    padding: 16px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 5;
+
+    width: 100%;
+    border-radius: 0px;
+
+    &-btn {
+      width: auto;
+    }
+  }
+}
+
+@media ($largeMobile) {
+  .main__content-recent-ads {
+    nav {
+      display: none;
+    }
+
+    &-heading {
+      max-width: 250px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &-info {
+      row-gap: 25px;
+    }
+  }
+
+  .main__item-devider {
+    margin: 100px 0px 60px;
+  }
+}
+
+@media ($mobile) {
+  .main__item-feedback {
+    &-btn {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrance</title>
+    <link rel="shortcut icon" href="../assets/Images/logo-img.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/styles/normalize.css" />
+    <link rel="stylesheet" href="../assets/styles/entrance/css/style.css" />
+    <link rel="stylesheet" href="../assets/styles/entrance/css/media.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <h4 class="header__logo">NOVO</h4>
+          <a
+            href="/src/sellerRegistration.html"
+            target="_blank"
+            class="header__login button"
+            id="header-login-btn"
+            >Стать продавцем</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <form class="form" method="get" id="form" action="customer/index.html">
+          <div class="form__head">
+            <h1 class="form__head-heading">Вход в аккаунт</h1>
+          </div>
+          <div class="form__content">
+            <div class="form__content-input-wrapper">
+              <p>E-mail</p>
+              <input
+                class="form__content-input w100"
+                type="email"
+                form="form"
+                required
+                form="form"
+              />
+            </div>
+            <div class="form__content-input-wrapper">
+              <p>Пароль</p>
+              <input
+                class="form__content-input w100"
+                type="password"
+                form="form"
+                required
+                form="form"
+              />
+            </div>
+            <div class="form__condition">
+              <input
+                class="form__condition-input"
+                type="checkbox"
+                id="condition"
+                form="form"
+                required
+              />
+              <label class="form__condition-input-text" for="condition"
+                >Вы принимаете <span>Условия использования</span> и
+                <span>Заявлением о конфиденциальности</span> NOVO</label
+              >
+            </div>
+            <button class="form__button" type="submit" form="form" id="form-submit-btn">
+              Продолжить
+            </button>
+          </div>
+        </form>
+        <div class="logIn">
+          <p class="logIn__text">Нет аккаунта?</p>
+          <a href="./buyerRegistration.html" class="logIn__link">Регистрация</a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__logo">
+          <h2>Novo</h2>
+          <p class="footer__logo-text gray">
+            Маркетплейс коммерчиского транспорта и тяжелой техники
+          </p>
+        </div>
+        <nav class="footer__menu">
+          <p class="w100 gray">Покупателю</p>
+          <a href="#" class="footer__menu-link white">Служба поддержки</a>
+          <a href="#" class="footer__menu-link white">Стать продавцом</a>
+        </nav>
+        <div class="footer__socials">
+          <p class="small gray">Следите за нами</p>
+          <nav class="footer__socials-nav">
+            <a href="#" class="footer__social-link">
+              <img src="../assets/Images/main/footer/facebook.svg" alt="facebook" />
+            </a>
+            <a href="#" class="footer__social-link">
+              <img src="../assets/Images/main/footer/instagram.svg" alt="instagram" />
+            </a>
+            <a href="#" class="footer__social-link">
+              <img src="../assets/Images/main/footer/youtube.svg" alt="youtube" />
+            </a>
+          </nav>
+        </div>
+        <div class="footer__copyright w100">
+          <p class="footer__copyright-text small">© 2019–2020 Группа компаний «NOVO»</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

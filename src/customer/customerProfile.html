@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer profile</title>
+    <link rel="shortcut icon" href="/assets/Images/logo-img.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/styles/normalize.css" />
+    <link rel="stylesheet" href="/assets/styles/customer/customerProfile/css/style.css" />
+    <link rel="stylesheet" href="/assets/styles/customer/customerProfile/css/media.css" />
+    <script src="/assets/scripts/customer/profile.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <h4 class="header__logo">NOVO</h4>
+          <div class="header__nav-row">
+            <div class="header__profile" id="profile-content">
+              <div class="header__profile-arrow"></div>
+              <div class="header__profile-content">
+                <a href="customerProfile.html" class="header__profile-option">Избранное</a>
+                <a href="customerProfile.html" class="header__profile-option"
+                  >Сообщения <span>(4 новых)</span></a
+                >
+                <a href="customerProfile.html" class="header__profile-option">Настройки профиля</a>
+              </div>
+            </div>
+            <a
+              href="/src/sellerRegistration.html"
+              target="_blank"
+              class="header__login button profile"
+              id="header-login-btn"
+              >Стать продавцем</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <header class="main__header">
+        <div class="container">
+          <nav class="customer-pages-nav">
+            <a href="./index.html" class="customer-pages-nav__link">Главная</a>
+            <img src="/assets/Images/customer/main/nav-arrow.svg" alt="arrow" />
+            <a href="./customerProfile.html" class="customer-pages-nav__link active" id="page-link"
+              >Избранное</a
+            >
+          </nav>
+          <h2 class="main__heading" id="main-heading">Избранное</h2>
+          <nav class="main__header-nav">
+            <div class="main__header-nav-item active">
+              <p class="main__header-nav-item-text">Избранное</p>
+              <div class="main__header-nav-item-line"></div>
+            </div>
+            <div class="main__header-nav-item">
+              <p class="main__header-nav-item-text">Сообщения <span>(4 новых)</span></p>
+              <div class="main__header-nav-item-line"></div>
+            </div>
+            <div class="main__header-nav-item">
+              <div class="main__header-nav-item-head">
+                <img
+                  class="main__header-nav-item-setting-img"
+                  src="/assets/Images/seller/main/settings.svg"
+                  alt="settings"
+                />
+                <p class="main__header-nav-item-text">Настройки профиля</p>
+              </div>
+              <div class="main__header-nav-item-line"></div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="main__content">
+        <div class="container">
+          <div class="main__ads">
+            <div class="container">
+              <div class="main__content-input-wrapper">
+                <img
+                  class="main__content-input-wrapper-img"
+                  src="/assets/Images/seller/main/search.svg"
+                  alt="search"
+                />
+                <input
+                  class="main__content-input w100"
+                  id="main-content-input"
+                  type="text"
+                  placeholder="Поиск по объявлениям"
+                  value=""
+                  autocomplete="off"
+                />
+              </div>
+              <div class="main__content-row" id="main-content-row">
+                <div class="main__content-card">
+                  <img
+                    class="main__content-card-img"
+                    src="/assets/Images/seller/main/car-1.png"
+                    alt="car-1"
+                  />
+                  <p class="main__content-card-category-text">
+                    Закрытые грузопассажирские автомобили
+                  </p>
+                  <h6 class="main__content-card-heading ads">
+                    Opel COMBO Airco Elct Ramen Stuurbediening
+                  </h6>
+                  <div class="main__content-card-row">
+                    <div class="main__content-card-row-item">2015</div>
+                    <div class="main__content-card-row-item">2 000 kg</div>
+                    <div class="main__content-card-row-item">490 574 km</div>
+                  </div>
+                  <hr class="main__content-card-line" />
+                  <div class="main__content-card-geoPrice">
+                    <div class="main__content-card-geo">
+                      <img src="/assets/Images/seller/main/location.svg" alt="location" />
+                      <p class="main__content-card-geo-text">Garage van Nierop Netherlands</p>
+                    </div>
+                    <h3 class="main__content-card-price">1 500€</h3>
+                  </div>
+                  <div class="main__content-card-edit">
+                    <a href="item.html" class="main__content-edit-card-btn" type="button">
+                      Редактировать
+                    </a>
+                    <button class="main__content-delete-card-btn" type="button">
+                      <img src="/assets/Images/seller/main/trash.svg" alt="trash" />
+                      Удалить
+                    </button>
+                  </div>
+                </div>
+                <div class="main__content-card">
+                  <img
+                    class="main__content-card-img"
+                    src="/assets/Images/seller/main/car-2.png"
+                    alt="car-1"
+                  />
+                  <p class="main__content-card-category-text">Закрытые пассажирские автомобили</p>
+                  <h6 class="main__content-card-heading ads">
+                    Setra 317 UL-GT/Klima/6 Gang/65 Sitz/Tüv:12.2020/Euro3
+                  </h6>
+                  <div class="main__content-card-row">
+                    <div class="main__content-card-row-item">2011</div>
+                    <div class="main__content-card-row-item">4500 kg</div>
+                    <div class="main__content-card-row-item">320 000 km</div>
+                  </div>
+                  <hr class="main__content-card-line" />
+                  <div class="main__content-card-geoPrice">
+                    <div class="main__content-card-geo">
+                      <img src="/assets/Images/seller/main/location.svg" alt="location" />
+                      <p class="main__content-card-geo-text">Garage van Nierop Netherlands</p>
+                    </div>
+                    <h3 class="main__content-card-price">13 900€</h3>
+                  </div>
+                  <div class="main__content-card-edit">
+                    <a href="item.html" class="main__content-edit-card-btn" type="button">
+                      Редактировать
+                    </a>
+                    <button class="main__content-delete-card-btn" type="button">
+                      <img src="/assets/Images/seller/main/trash.svg" alt="trash" />
+                      Удалить
+                    </button>
+                  </div>
+                </div>
+                <div class="main__content-card">
+                  <img
+                    class="main__content-card-img"
+                    src="/assets/Images/seller/main/car-3.png"
+                    alt="car-1"
+                  />
+                  <p class="main__content-card-category-text">Закрытые пассажирские автомобили</p>
+                  <h6 class="main__content-card-heading ads">
+                    Cobus Mercedes Benz 2700 S / Airport / Flughafenbus....
+                  </h6>
+                  <div class="main__content-card-row">
+                    <div class="main__content-card-row-item">2015</div>
+                    <div class="main__content-card-row-item">2 000 kg</div>
+                    <div class="main__content-card-row-item">490 574 km</div>
+                  </div>
+                  <hr class="main__content-card-line" />
+                  <div class="main__content-card-geoPrice">
+                    <div class="main__content-card-geo">
+                      <img src="/assets/Images/seller/main/location.svg" alt="location" />
+                      <p class="main__content-card-geo-text">Garage van Nierop Netherlands</p>
+                    </div>
+                    <h3 class="main__content-card-price">1 500€</h3>
+                  </div>
+                  <div class="main__content-card-edit">
+                    <a href="item.html" class="main__content-edit-card-btn" type="button">
+                      Редактировать
+                    </a>
+                    <button class="main__content-delete-card-btn" type="button">
+                      <img src="/assets/Images/seller/main/trash.svg" alt="trash" />
+                      Удалить
+                    </button>
+                  </div>
+                </div>
+                <div class="main__content-card">
+                  <img
+                    class="main__content-card-img"
+                    src="/assets/Images/seller/main/car-3.png"
+                    alt="car-1"
+                  />
+                  <p class="main__content-card-category-text">Закрытые пассажирские автомобили</p>
+                  <h6 class="main__content-card-heading ads">
+                    Cobus Mercedes Benz 2700 S / Airport / Flughafenbus....
+                  </h6>
+                  <div class="main__content-card-row">
+                    <div class="main__content-card-row-item">2015</div>
+                    <div class="main__content-card-row-item">2 000 kg</div>
+                    <div class="main__content-card-row-item">490 574 km</div>
+                  </div>
+                  <hr class="main__content-card-line" />
+                  <div class="main__content-card-geoPrice">
+                    <div class="main__content-card-geo">
+                      <img src="/assets/Images/seller/main/location.svg" alt="location" />
+                      <p class="main__content-card-geo-text">Garage van Nierop Netherlands</p>
+                    </div>
+                    <h3 class="main__content-card-price">1 500€</h3>
+                  </div>
+                  <div class="main__content-card-edit">
+                    <a href="item.html" class="main__content-edit-card-btn" type="button">
+                      Редактировать
+                    </a>
+                    <button class="main__content-delete-card-btn" type="button">
+                      <img src="/assets/Images/seller/main/trash.svg" alt="trash" />
+                      Удалить
+                    </button>
+                  </div>
+                </div>
+                <div class="main__content-card" id="new-card">
+                  <img
+                    class="main__content-card-img"
+                    src="/assets/Images/seller/main/car-4.png"
+                    alt="car-1"
+                  />
+                  <p class="main__content-card-category-text">
+                    Закрытые грузопассажирские автомобили
+                  </p>
+                  <h6 class="main__content-card-heading ads">
+                    Mercedes-Benz V 250 d lang Avantgarde Edition 360° Stdhzg....
+                  </h6>
+                  <div class="main__content-card-row">
+                    <div class="main__content-card-row-item">2015</div>
+                    <div class="main__content-card-row-item">2 000 kg</div>
+                    <div class="main__content-card-row-item">490 574 km</div>
+                  </div>
+                  <hr class="main__content-card-line" />
+                  <div class="main__content-card-geoPrice">
+                    <div class="main__content-card-geo">
+                      <img src="/assets/Images/seller/main/location.svg" alt="location" />
+                      <p class="main__content-card-geo-text">Garage van Nierop Netherlands</p>
+                    </div>
+                    <h3 class="main__content-card-price">54 300€</h3>
+                  </div>
+                  <div class="main__content-card-edit">
+                    <a href="item.html" class="main__content-edit-card-btn" type="button">
+                      Редактировать
+                    </a>
+                    <button class="main__content-delete-card-btn" type="button">
+                      <img src="/assets/Images/seller/main/trash.svg" alt="trash" />
+                      Удалить
+                    </button>
+                  </div>
+                </div>
+                <div class="main__content-card">
+                  <img
+                    class="main__content-card-img"
+                    src="/assets/Images/seller/main/car-5.png"
+                    alt="car-1"
+                  />
+                  <p class="main__content-card-category-text">Грузовой фургон</p>
+                  <h6 class="main__content-card-heading ads">
+                    Nissan Eco T 100 Paardenvervoer / BJ: 1995 ledig gewicht
+                  </h6>
+                  <div class="main__content-card-row">
+                    <div class="main__content-card-row-item">2015</div>
+                    <div class="main__content-card-row-item">2 000 kg</div>
+                    <div class="main__content-card-row-item">490 574 km</div>
+                  </div>
+                  <hr class="main__content-card-line" />
+                  <div class="main__content-card-geoPrice">
+                    <div class="main__content-card-geo">
+                      <img src="/assets/Images/seller/main/location.svg" alt="location" />
+                      <p class="main__content-card-geo-text">Garage van Nierop Netherlands</p>
+                    </div>
+                    <h3 class="main__content-card-price">3 100€</h3>
+                  </div>
+                  <div class="main__content-card-edit">
+                    <a href="item.html" class="main__content-edit-card-btn" type="button">
+                      Редактировать
+                    </a>
+                    <button class="main__content-delete-card-btn" type="button">
+                      <img src="/assets/Images/seller/main/trash.svg" alt="trash" />
+                      Удалить
+                    </button>
+                  </div>
+                </div>
+                <div class="main__content-card">
+                  <img
+                    class="main__content-card-img"
+                    src="/assets/Images/seller/main/car-5.png"
+                    alt="car-1"
+                  />
+                  <p class="main__content-card-category-text">Грузовой фургон</p>
+                  <h6 class="main__content-card-heading ads">
+                    Nissan Eco T 100 Paardenvervoer / BJ: 1995 ledig gewicht
+                  </h6>
+                  <div class="main__content-card-row">
+                    <div class="main__content-card-row-item">2015</div>
+                    <div class="main__content-card-row-item">2 000 kg</div>
+                    <div class="main__content-card-row-item">490 574 km</div>
+                  </div>
+                  <hr class="main__content-card-line" />
+                  <div class="main__content-card-geoPrice">
+                    <div class="main__content-card-geo">
+                      <img src="/assets/Images/seller/main/location.svg" alt="location" />
+                      <p class="main__content-card-geo-text">Garage van Nierop Netherlands</p>
+                    </div>
+                    <h3 class="main__content-card-price">3 100€</h3>
+                  </div>
+                  <div class="main__content-card-edit">
+                    <a href="item.html" class="main__content-edit-card-btn" type="button">
+                      Редактировать
+                    </a>
+                    <button class="main__content-delete-card-btn" type="button">
+                      <img src="/assets/Images/seller/main/trash.svg" alt="trash" />
+                      Удалить
+                    </button>
+                  </div>
+                </div>
+                <div class="main__content-card">
+                  <img
+                    class="main__content-card-img"
+                    src="/assets/Images/seller/main/car-6.png"
+                    alt="car-1"
+                  />
+                  <p class="main__content-card-category-text">Грузовой фургон</p>
+                  <h6 class="main__content-card-heading ads">
+                    Renault Mascott 130.35 DC 363 / open laadbak 130
+                  </h6>
+                  <div class="main__content-card-row">
+                    <div class="main__content-card-row-item">2015</div>
+                    <div class="main__content-card-row-item">2 000 kg</div>
+                    <div class="main__content-card-row-item">490 574 km</div>
+                  </div>
+                  <hr class="main__content-card-line" />
+                  <div class="main__content-card-geoPrice">
+                    <div class="main__content-card-geo">
+                      <img src="/assets/Images/seller/main/location.svg" alt="location" />
+                      <p class="main__content-card-geo-text">Garage van Nierop Netherlands</p>
+                    </div>
+                    <h3 class="main__content-card-price">4 850€</h3>
+                  </div>
+                  <div class="main__content-card-edit">
+                    <a href="item.html" class="main__content-edit-card-btn" type="button">
+                      Редактировать
+                    </a>
+                    <button class="main__content-delete-card-btn" type="button">
+                      <img src="/assets/Images/seller/main/trash.svg" alt="trash" />
+                      Удалить
+                    </button>
+                  </div>
+                </div>
+                <div class="main__content-card">
+                  <img
+                    class="main__content-card-img"
+                    src="/assets/Images/seller/main/car-1.png"
+                    alt="car-1"
+                  />
+                  <p class="main__content-card-category-text">
+                    Закрытые грузопассажирские автомобили
+                  </p>
+                  <h6 class="main__content-card-heading ads">
+                    Opel COMBO Airco Elct Ramen Stuurbediening
+                  </h6>
+                  <div class="main__content-card-row">
+                    <div class="main__content-card-row-item">2015</div>
+                    <div class="main__content-card-row-item">2 000 kg</div>
+                    <div class="main__content-card-row-item">490 574 km</div>
+                  </div>
+                  <hr class="main__content-card-line" />
+                  <div class="main__content-card-geoPrice">
+                    <div class="main__content-card-geo">
+                      <img src="/assets/Images/seller/main/location.svg" alt="location" />
+                      <p class="main__content-card-geo-text">Garage van Nierop Netherlands</p>
+                    </div>
+                    <h3 class="main__content-card-price">1 500€</h3>
+                  </div>
+                  <div class="main__content-card-edit">
+                    <a href="item.html" class="main__content-edit-card-btn" type="button">
+                      Редактировать
+                    </a>
+                    <button class="main__content-delete-card-btn" type="button">
+                      <img src="/assets/Images/seller/main/trash.svg" alt="trash" />
+                      Удалить
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="wrapper">
+                <button class="main__loadMoreBtn" type="button" id="add-card-btn">
+                  Загрузить ещё
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="main__messages">
+            <div class="main__messages-head">
+              <div class="main__messages-head-block"></div>
+              <div class="main__messages-head-names">
+                <div class="main__messages-head-names-item">
+                  <p class="main__messages-head-name">Отправлено</p>
+                  <p class="main__messages-head-name desctop">Объявления</p>
+                </div>
+                <div class="main__messages-head-names-item">
+                  <p class="main__messages-head-name">Сообщений</p>
+                  <p class="main__messages-head-name">Отправлено</p>
+                </div>
+              </div>
+            </div>
+            <div class="main__messages-body">
+              <div class="main__messages-body-conversations-wrapper" id="conversations-scroll">
+                <div class="main__messages-body-conversations">
+                  <div class="main__messages-body-conversation">
+                    <div class="main__messages-body-block"></div>
+                    <div class="main__messages-body-names">
+                      <div class="main__messages-body-item ad">
+                        <p class="main__messages-person-name">Игорь Игорьевич</p>
+                        <p class="main__messages-ad-name">SCHWARZMUELLER 3Achs Stahl...</p>
+                      </div>
+                      <div class="main__messages-body-item time">
+                        <p class="main__messages-quantity">4 <span>новых</span></p>
+                        <time class="main__messages-sending-time">19:56</time>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main__messages-body-conversation active">
+                    <div class="main__messages-body-block"></div>
+                    <div class="main__messages-body-names">
+                      <div class="main__messages-body-item ad">
+                        <p class="main__messages-person-name">Darrell Steward</p>
+                        <p class="main__messages-ad-name">Opel Movano B Pritsche L3H1 3...</p>
+                      </div>
+                      <div class="main__messages-body-item time">
+                        <p class="main__messages-quantity">4 <span>новых</span></p>
+                        <time class="main__messages-sending-time">ПД, 19:05</time>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main__messages-body-conversation">
+                    <div class="main__messages-body-block"></div>
+                    <div class="main__messages-body-names">
+                      <div class="main__messages-body-item ad">
+                        <p class="main__messages-person-name">Albert Flores</p>
+                        <p class="main__messages-ad-name">SCHWARZMUELLER 3Achs Stahl...</p>
+                      </div>
+                      <div class="main__messages-body-item time">
+                        <p class="main__messages-quantity">4 <span>новых</span></p>
+                        <time class="main__messages-sending-time">СБ, 16:45</time>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main__messages-body-conversation active">
+                    <div class="main__messages-body-block"></div>
+                    <div class="main__messages-body-names">
+                      <div class="main__messages-body-item ad">
+                        <p class="main__messages-person-name">Robert Fox</p>
+                        <p class="main__messages-ad-name">Opel Movano B Pritsche L3H1 3...</p>
+                      </div>
+                      <div class="main__messages-body-item time">
+                        <p class="main__messages-quantity">1 <span>новое</span></p>
+                        <time class="main__messages-sending-time">ПТ, 12:50</time>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main__messages-body-conversation">
+                    <div class="main__messages-body-block"></div>
+                    <div class="main__messages-body-names">
+                      <div class="main__messages-body-item ad">
+                        <p class="main__messages-person-name">Arlene McCoy</p>
+                        <p class="main__messages-ad-name">SCHWARZMUELLER 3Achs Stahl...</p>
+                      </div>
+                      <div class="main__messages-body-item time">
+                        <p class="main__messages-quantity">4 <span>новых</span></p>
+                        <time class="main__messages-sending-time">ПН, 20:30</time>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="main__messages-body-conversations">
+                  <div class="main__messages-body-conversation">
+                    <div class="main__messages-body-block"></div>
+                    <div class="main__messages-body-names">
+                      <div class="main__messages-body-item ad">
+                        <p class="main__messages-person-name">Игорь Игорьевич</p>
+                        <p class="main__messages-ad-name">SCHWARZMUELLER 3Achs Stahl...</p>
+                      </div>
+                      <div class="main__messages-body-item time">
+                        <p class="main__messages-quantity">4 <span>новых</span></p>
+                        <time class="main__messages-sending-time">19:56</time>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main__messages-body-conversation active">
+                    <div class="main__messages-body-block"></div>
+                    <div class="main__messages-body-names">
+                      <div class="main__messages-body-item ad">
+                        <p class="main__messages-person-name">Darrell Steward</p>
+                        <p class="main__messages-ad-name">Opel Movano B Pritsche L3H1 3...</p>
+                      </div>
+                      <div class="main__messages-body-item time">
+                        <p class="main__messages-quantity">4 <span>новых</span></p>
+                        <time class="main__messages-sending-time">ПД, 19:05</time>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main__messages-body-conversation">
+                    <div class="main__messages-body-block"></div>
+                    <div class="main__messages-body-names">
+                      <div class="main__messages-body-item ad">
+                        <p class="main__messages-person-name">Albert Flores</p>
+                        <p class="main__messages-ad-name">SCHWARZMUELLER 3Achs Stahl...</p>
+                      </div>
+                      <div class="main__messages-body-item time">
+                        <p class="main__messages-quantity">4 <span>новых</span></p>
+                        <time class="main__messages-sending-time">СБ, 16:45</time>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main__messages-body-conversation active">
+                    <div class="main__messages-body-block"></div>
+                    <div class="main__messages-body-names">
+                      <div class="main__messages-body-item ad">
+                        <p class="main__messages-person-name">Robert Fox</p>
+                        <p class="main__messages-ad-name">Opel Movano B Pritsche L3H1 3...</p>
+                      </div>
+                      <div class="main__messages-body-item time">
+                        <p class="main__messages-quantity">1 <span>новое</span></p>
+                        <time class="main__messages-sending-time">ПТ, 12:50</time>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main__messages-body-conversation">
+                    <div class="main__messages-body-block"></div>
+                    <div class="main__messages-body-names">
+                      <div class="main__messages-body-item ad">
+                        <p class="main__messages-person-name">Arlene McCoy</p>
+                        <p class="main__messages-ad-name">SCHWARZMUELLER 3Achs Stahl...</p>
+                      </div>
+                      <div class="main__messages-body-item time">
+                        <p class="main__messages-quantity">4 <span>новых</span></p>
+                        <time class="main__messages-sending-time">ПН, 20:30</time>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <nav class="main__messages-nav">
+                <button class="main__messages-remove-talking-btn" id="remove-conversation-btn">
+                  <img src="/assets/Images/customer/sellerPage/trash.svg" alt="trash" />
+                  <p>Удалить</p>
+                </button>
+                <div class="main__messages-page-nav">
+                  <button class="main__messages-btn-page" id="prev-conversation-page-btn">
+                    <img
+                      src="/assets/Images/customer/sellerPage/green-left-arrow.svg"
+                      alt="left-arrow"
+                    />
+                  </button>
+                  <p class="main__messages-page-number" id="conversation-page-number">Страница 1</p>
+                  <button class="main__messages-btn-page" id="next-conversation-page-btn">
+                    <img
+                      src="/assets/Images/customer/sellerPage/green-right-arrow.svg"
+                      alt="right-arrow"
+                    />
+                  </button>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="main__settings">
+            <h5 class="main__content-heading">
+              Профиль mail@gmail.com
+              <span>Выйти из аккаунта</span>
+            </h5>
+            <div class="main__settings-accordions">
+              <div class="main__settings-accordion">
+                <div class="main__settings-accordion-heading">
+                  <h6 class="main__content-card-heading">Настройки аккаунта</h6>
+                  <div class="main__settings-accordion-arrows"></div>
+                </div>
+                <div class="main__settings-accordion-content none">
+                  <div class="main__settings-accordion-content-head">
+                    <p>Ваш E-mail адрес:</p>
+                    <span>email@gmail.com</span>
+                  </div>
+                  <div class="main__settings-accordion-content-form">
+                    <form class="form__content-part" method="dialog" id="form1">
+                      <h6 class="w100">Изменить E-mail адрес</h6>
+                      <div class="form__content-input-wrapper">
+                        <p>Введите новый E-mail адрес</p>
+                        <input
+                          class="form__content-input"
+                          type="email"
+                          form="form1"
+                          required
+                          autocomplete="off"
+                          id="main-setting-email-modal-input"
+                        />
+                        <button
+                          class="form__content-part-btn"
+                          type="submit"
+                          id="main-setting-email-modal-btn-open"
+                          form="form1"
+                        >
+                          Сохранить
+                        </button>
+                      </div>
+                    </form>
+                    <form class="form__content-part" method="dialog" id="form4">
+                      <h6 class="w100">Изменить пароль</h6>
+                      <form id="form4" method="dialog">
+                        <div class="form__content-input-wrapper">
+                          <p>Введите новый пароль</p>
+                          <input
+                            class="form__content-input"
+                            type="password"
+                            form="form4"
+                            minlength="8"
+                            required
+                            id="main-setting-password-modal-input"
+                          />
+                          <button
+                            class="form__content-part-btn"
+                            type="submit"
+                            form="form4"
+                            id="main-setting-password-modal-btn-open"
+                          >
+                            Сохранить
+                          </button>
+                        </div>
+                      </form>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="main__settings-accordion second">
+                <div class="main__settings-accordion-heading">
+                  <h6 class="main__content-card-heading">Изменить контактную информацию</h6>
+                  <div class="main__settings-accordion-arrows"></div>
+                </div>
+                <div class="main__settings-accordion-content none">
+                  <form class="main__settings-accordion-content-form" id="form2" method="get">
+                    <div class="form__content-part">
+                      <h6 class="main__settings-accordion-content-form-heading">
+                        Тут вы можете поменять информацию про компанию, которую видят ваши клиенты
+                      </h6>
+                      <div class="form__content-part-wrapper">
+                        <div class="form__content-input-wrapper">
+                          <p>Имя</p>
+                          <input class="form__content-input" type="text" form="form2" required />
+                        </div>
+                        <div class="form__content-input-wrapper">
+                          <p>Фамилия</p>
+                          <input class="form__content-input" type="text" form="form2" required />
+                        </div>
+                      </div>
+                      <button class="form__content-part-btn" type="submit" form="form2">
+                        Сохранить
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="main__settings-modal-wrapper" id="main-settings-email-modal">
+              <div class="main__settings-modal" id="main-settings-email-modal-content">
+                <picture>
+                  <source
+                    srcset="/assets/Images/seller/main/success-mobile.png"
+                    media="(max-width: 767px)"
+                  />
+                  <img src="/assets/Images/seller/main/success-desctop.png" alt="success" />
+                </picture>
+                <h1 class="main__settings-modal-heading">Подтвердите ваш новый E-mail адрес</h1>
+                <p class="main__settings-modal-text">
+                  На ваш новый E-mail адрес была отправлена ссылка для подтверждения смены почты
+                </p>
+                <button
+                  class="main__settings-modal-btn"
+                  type="button"
+                  id="main-setting-email-modal-btn-close"
+                >
+                  Назад к настройкам
+                </button>
+              </div>
+            </div>
+            <div class="main__settings-modal-wrapper" id="main-settings-password-modal">
+              <div class="main__settings-modal password" id="main-settings-password-modal-content">
+                <picture>
+                  <source
+                    srcset="/assets/Images/seller/main/success-mobile.png"
+                    media="(max-width: 767px)"
+                  />
+                  <img src="/assets/Images/seller/main/success-desctop.png" alt="success" />
+                </picture>
+                <h1 class="main__settings-modal-heading">Подтвердите смену пароля</h1>
+                <p class="main__settings-modal-text">
+                  На ваш новый E-mail адрес была отправлена ссылка для подтверждения смены пароля
+                </p>
+                <button
+                  class="main__settings-modal-btn"
+                  type="button"
+                  id="main-setting-password-modal-btn-close"
+                >
+                  Назад к настройкам
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__logo">
+          <h2>Novo</h2>
+          <p class="footer__logo-text gray">
+            Маркетплейс коммерчиского транспорта и тяжелой техники
+          </p>
+        </div>
+        <nav class="footer__menu">
+          <p class="w100 gray">Покупателю</p>
+          <a href="#" class="footer__menu-link white">Служба поддержки</a>
+          <a href="#" class="footer__menu-link white">Стать продавцом</a>
+        </nav>
+        <div class="footer__socials">
+          <p class="small gray">Следите за нами</p>
+          <nav class="footer__socials-nav">
+            <a href="#" class="footer__social-link">
+              <img src="/assets/Images/main/footer/facebook.svg" alt="facebook" />
+            </a>
+            <a href="#" class="footer__social-link">
+              <img src="/assets/Images/main/footer/instagram.svg" alt="instagram" />
+            </a>
+            <a href="#" class="footer__social-link">
+              <img src="/assets/Images/main/footer/youtube.svg" alt="youtube" />
+            </a>
+          </nav>
+        </div>
+        <div class="footer__copyright w100">
+          <p class="footer__copyright-text small">© 2019–2020 Группа компаний «NOVO»</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

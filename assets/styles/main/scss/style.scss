@@ -1,0 +1,584 @@
+@import '../../../../Ui_Kit/scss/variables/main/variables';
+@import '../../../../Ui_Kit/css/style.css';
+@import '../../../../Ui_Kit/scss/animations.css';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Manrope', sans-serif;
+  background-color: $main-black;
+}
+
+.container {
+  max-width: 1255px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// Mixins
+
+@mixin titleAlignment($mw) {
+  max-width: $mw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Layout */
+
+.header {
+  &__logo {
+    display: flex;
+    column-gap: 2px;
+    align-items: center;
+    z-index: 5;
+  }
+
+  &__logo-dot {
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: $main-green;
+    border-radius: 50%;
+    margin-top: 18px;
+  }
+
+  &__nav {
+    padding: 16px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-menu {
+      display: flex;
+      align-items: center;
+      column-gap: 60px;
+    }
+  }
+
+  &__login.button {
+    padding: 14px 28px;
+    border: 2px solid $btn-black;
+    background-color: $btn-black;
+  }
+
+  &__login.button:hover {
+    border: 2px solid $main-green;
+    background-color: transparent;
+  }
+
+  &__login.button:before {
+    display: none;
+  }
+
+  &__nav-mobile-open-btn {
+    display: none;
+    position: relative;
+    padding: 0px;
+    width: 32px;
+    height: 20px;
+    border: 0px;
+    background-color: transparent;
+  }
+
+  &__nav-mobile-open-btn span:first-child,
+  &__nav-mobile-open-btn span:nth-child(2) {
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: 0.3s;
+    transform-origin: center;
+    z-index: 5;
+  }
+
+  &__nav-mobile-open-btn span:first-child {
+    top: 5px;
+  }
+
+  &__nav-mobile-open-btn span:nth-child(2) {
+    bottom: 5px;
+  }
+
+  &__nav-mobile {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+
+    display: none;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: $main-black;
+
+    &-list {
+      margin-top: 100px;
+
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+    }
+
+    &-list li {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-link:before {
+      bottom: -3px;
+    }
+  }
+}
+
+.hero {
+  padding: 160px 0px 270px;
+  background: $header-gradient,
+    url('../../../Images/main/header/tractor.png') no-repeat center bottom;
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  &__heading {
+    max-width: 550px;
+  }
+
+  &__heading + &__button {
+    margin-top: 49px;
+  }
+
+  &__button:hover {
+    color: white;
+    background-color: transparent;
+  }
+}
+
+.about {
+  padding: 90px 0px 180px;
+
+  h5 + &__title {
+    margin-top: 20px;
+  }
+
+  &__subtitle {
+    text-align: center;
+  }
+
+  &__title {
+    @include titleAlignment(920px);
+  }
+
+  &__title + &__categories-wrapper {
+    margin-top: 30px;
+  }
+
+  &__categories {
+    display: flex;
+    justify-content: space-between;
+    height: 540px;
+  }
+
+  &__category {
+    width: 290px;
+    height: 410px;
+    padding: 0px 32px 23px;
+    border-radius: 8px;
+    background: $about-gradient,
+      url('../../../Images/main/about/desctop/transport.png') no-repeat center;
+
+    display: flex;
+    align-items: flex-end;
+    align-self: center;
+
+    &-title {
+      max-width: 150px;
+    }
+  }
+
+  &__category:nth-child(2) {
+    background: $about-gradient,
+      url('../../../Images/main/about/desctop/technic.png') no-repeat center;
+    align-self: end;
+  }
+
+  &__category:nth-child(3) {
+    background: $about-gradient,
+      url('../../../Images/main/about/desctop/excavator.png') no-repeat center;
+  }
+
+  &__category:nth-child(4) {
+    background: $about-gradient,
+      url('../../../Images/main/about/desctop/equioment.png') no-repeat center;
+    align-self: start;
+  }
+}
+
+.features {
+  padding: 90px 0px 470px;
+  background: url('../../../Images/main/features/section-bg.png') no-repeat bottom center,
+    $section-bg-black;
+
+  &__list {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__item {
+    max-width: 190px;
+    text-align: center;
+  }
+
+  &__item:nth-child(2) {
+    max-width: 150px;
+    align-self: start;
+  }
+}
+
+.pricing {
+  padding: 180px 0px;
+
+  &__subtitle {
+    text-align: center;
+  }
+
+  &__subtitle + &__title {
+    margin-top: 16px;
+  }
+
+  &__title {
+    @include titleAlignment(700px);
+  }
+
+  &__title + &__plans {
+    margin-top: 80px;
+  }
+
+  &__plans {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__plan {
+    min-width: 290px;
+    padding: 40px 0px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s;
+
+    img + h6 {
+      margin-top: 16px;
+    }
+
+    h6 + h3,
+    h6 + &-price {
+      margin-top: 20px;
+    }
+
+    &-price {
+      color: $price-card-text-gray;
+      &-number {
+        font-size: 40px;
+        line-height: 60px;
+        color: white;
+      }
+    }
+
+    h3 + &-details,
+    &-price + &-details {
+      margin-top: 8px;
+    }
+
+    &-details {
+      font-size: 18px;
+      color: $main-green;
+    }
+
+    &-details + &-btn {
+      margin-top: 40px;
+    }
+
+    &-btn {
+      padding: 16px 19px 16px 21px;
+      border-radius: 50%;
+      display: flex;
+      margin: 0 auto;
+      background-color: transparent;
+    }
+  }
+
+  &__plan:hover {
+    cursor: pointer;
+    background-color: $btn-black;
+  }
+
+  &__plan:hover &__plan-btn {
+    background-color: $main-green;
+  }
+
+  &__plans + &__ad {
+    margin-top: 120px;
+  }
+
+  &__ad {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+    picture {
+      z-index: 2;
+    }
+
+    &-btn {
+      padding: 12px 22px;
+    }
+
+    &-content {
+      margin-left: -7px;
+      padding: 35px 40px 35px 60px;
+      border-radius: 0px 8px 8px 0px;
+      background-color: $btn-black;
+
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 16px;
+
+      p + button {
+        margin-top: 24px;
+      }
+    }
+  }
+}
+
+.pricing-modal {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(20, 20, 22, 0.4);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    position: relative;
+    padding: 80px 75px;
+    box-shadow: 0px 56px 94px 0px rgba(0, 0, 0, 0.53);
+    border-radius: 10px;
+    background-color: $btn-black;
+    text-align: center;
+
+    &-close {
+      position: absolute;
+      top: 27px;
+      right: 27px;
+      font-size: 22px;
+      color: white;
+      transition: 0.3s;
+    }
+
+    &-close:hover {
+      cursor: pointer;
+      color: $main-green;
+    }
+
+    &-title {
+      @include titleAlignment(445px);
+    }
+
+    &-title + &-text {
+      margin-top: 20px;
+    }
+
+    &-text {
+      @include titleAlignment(355px);
+    }
+
+    &-text + &-form {
+      margin-top: 60px;
+    }
+
+    &-form {
+      @include titleAlignment(240px);
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+
+      input + button {
+        margin-top: 20px;
+      }
+    }
+
+    &-input-wrapper {
+      position: relative;
+    }
+
+    &-input-span {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+
+      width: 100%;
+      height: 2px;
+      background-color: $main-green;
+      transform: scale(0);
+      transition: 0.4s;
+    }
+
+    &-input {
+      width: 100%;
+      padding-bottom: 7px;
+      border-bottom: 2px solid rgba(162, 165, 166, 1);
+      background-color: transparent;
+      color: white;
+      outline: 0px;
+    }
+
+    &-input::placeholder {
+      color: $main-gray;
+    }
+
+    &-input:focus {
+      border-bottom: 2px solid transparent;
+    }
+
+    &-input.invalid {
+      border-bottom: 2px solid red;
+    }
+  }
+}
+
+.pricing-modal.active {
+  display: flex;
+}
+
+.steps {
+  padding: 120px 0px;
+  background-color: $section-bg-black;
+
+  &__container {
+    max-width: 1445px;
+    padding: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 80px;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 120px;
+
+    &-content {
+      max-width: 170px;
+
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+    }
+  }
+
+  &__item.reverse {
+    flex-direction: row-reverse;
+    column-gap: 245px;
+  }
+
+  &__list + &__btn {
+    margin-top: 40px;
+  }
+}
+
+.footer {
+  padding: 60px 0px 30px;
+  border-top: 2px solid rgba(66, 66, 71, 1);
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px 17px;
+  }
+
+  &__logo {
+    padding-left: 45px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    &-text {
+      max-width: 320px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 60px;
+
+    &-link {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  &__socials {
+    padding-right: 45px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+
+    &-nav {
+      display: flex;
+      column-gap: 12px;
+    }
+  }
+
+  &__copyright {
+    padding: 12px 0px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+
+    &-text {
+      text-align: center;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}

@@ -1,0 +1,32 @@
+/* Variables */
+
+// Colors
+$main-black: rgba(20, 20, 22, 1);
+$section-bg-black: rgba(27, 27, 30, 1);
+$btn-black: rgba(27, 27, 30, 1);
+$main-green: rgba(0, 150, 97, 1);
+$main-gray: rgba(133, 133, 134, 1);
+$price-card-text-gray: rgba(103, 103, 105, 1);
+
+// Gradients
+
+$header-gradient: linear-gradient(90deg, $main-black, 40%, transparent);
+$header-gradient-mobile: linear-gradient(to top, $main-black, 40%, transparent);
+$about-gradient: linear-gradient(
+  to top,
+  rgba(20, 20, 22, 0.8),
+  20%,
+  rgba(20, 20, 22, 0.5),
+  40%,
+  rgba(20, 20, 22, 0),
+  60%,
+  transparent
+);
+
+// Media screens
+
+$laptop: "max-width: 1919px";
+$tablet: "max-width: 999px";
+$largeMobile: "max-width: 767px";
+$mobile: "max-width: 479px";
+$smallmobile: "max-width: 319px";

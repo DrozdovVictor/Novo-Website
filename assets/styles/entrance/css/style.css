@@ -1,0 +1,11 @@
+@import '/assets/styles/buyerRegistration/css/style.css';
+.form {
+  padding: 60px 90px 70px;
+}
+.form__head + .form__content {
+  margin-top: 50px;
+}
+
+.form__condition-input:checked + .form__condition-input-text::after {
+  top: -1px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ui Kit || Novo</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Заголовки -->
+    <h1>Заголовок 1</h1>
+    <h2>Заголовок 2</h2>
+    <h3>Заголовок 3</h3>
+    <h4>Заголовок 4</h4>
+    <h5>Заголовок 5</h5>
+    <h6>Заголовок 6</h6>
+    <!-- Кнопка -->
+    <button type="button">Кнопка</button>
+    <!-- Текст -->
+    <p>Текст</p>
+    <p class="small">Маленкий текст</p>
+    <!-- Принятие условий конфиденциальности -->
+    <div class="form__condition">
+      <input class="form__condition-input" type="checkbox" id="condition" form="form" required />
+      <label class="form__condition-input-text" for="condition"
+        >Авторизуясь, Вы принимаете <span>Условия использования</span> и
+        <span>Заявлением о конфиденциальности</span> NOVO</label
+      >
+    </div>
+    <!-- Шаблон для поля ввода -->
+    <div class="form__content-part mt30" id="form">
+      <h6 class="w100">Аккаунт</h6>
+      <div class="form__content-input-wrapper">
+        <p>E-mail *</p>
+        <input class="form__content-input w100" type="email" form="form" required />
+      </div>
+      <div class="form__content-input-wrapper">
+        <p>Пароль *</p>
+        <input
+          class="form__content-input w100"
+          type="password"
+          form="form"
+          required
+          minlength="8"
+        />
+      </div>
+      <button class="form__content-part-btn" type="submit">Сохранить</button>
+    </div>
+  </body>
+</html>

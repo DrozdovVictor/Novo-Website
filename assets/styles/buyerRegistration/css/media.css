@@ -1,0 +1,102 @@
+@import '/assets/styles/sellerRegistration/css/media.css';
+/* Variables */
+@media (max-width: 1919px) {
+  .header__logo {
+    font-size: 24px;
+  }
+  main {
+    padding: 90px 0px 120px;
+  }
+  .form {
+    padding: 60px 60px 70px;
+  }
+  .form__content-input-wrapper {
+    row-gap: 8px;
+  }
+  .form__content + .form__condition {
+    margin-top: 24px;
+  }
+  .logIn {
+    -moz-column-gap: 4px;
+         column-gap: 4px;
+  }
+}
+@media (max-width: 999px) {
+  main {
+    padding: 90px 0px 100px;
+  }
+  .form {
+    padding: 60px;
+  }
+  .form + .logIn {
+    margin-top: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .header__nav {
+    height: 72px;
+  }
+  .header__login.button {
+    font-size: 14px;
+  }
+  main {
+    padding: 60px 0px 90px;
+  }
+  .form {
+    padding: 40px 30px 50px;
+  }
+  .form__head-heading {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .form__head-text {
+    font-size: 12px;
+  }
+  .form__content {
+    width: 340px;
+  }
+  .form__content + .form__condition {
+    margin-top: 16px;
+  }
+  .form__condition {
+    max-width: 340px;
+  }
+}
+@media (max-width: 479px) {
+  .header__nav {
+    height: 65px;
+  }
+  .header__login.button {
+    font-size: 14px;
+  }
+  main {
+    padding: 40px 0px 80px;
+  }
+  .form {
+    padding: 40px 25px 25px;
+  }
+  .form__head-heading {
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .form__head-text.big {
+    font-size: 14px;
+  }
+  .form__head + .form__content {
+    margin-top: 16px;
+  }
+  .form__content {
+    width: 230px;
+    row-gap: 12px;
+  }
+  .form__content-input-wrapper {
+    row-gap: 4px;
+  }
+  .form__condition {
+    max-width: 230px;
+  }
+  .form__condition-input:checked + .form__condition-input-text::after {
+    top: 6px;
+  }
+}/*# sourceMappingURL=media.css.map */

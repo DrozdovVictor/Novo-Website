@@ -1,0 +1,130 @@
+@import '/assets/styles/sellerRegistration/css/media.css';
+@import '../../../../Ui_Kit/scss/variables/sellerRegistration/variables';
+
+@media ($laptop) {
+  .header__logo {
+    font-size: 24px;
+  }
+
+  main {
+    padding: 90px 0px 120px;
+  }
+
+  .form {
+    padding: 60px 60px 70px;
+
+    &__content-input-wrapper {
+      row-gap: 8px;
+    }
+
+    &__content + &__condition {
+      margin-top: 24px;
+    }
+  }
+
+  .logIn {
+    column-gap: 4px;
+  }
+}
+
+@media ($tablet) {
+  main {
+    padding: 90px 0px 100px;
+  }
+
+  .form {
+    padding: 60px;
+  }
+
+  .form + .logIn {
+    margin-top: 24px;
+  }
+}
+
+@media ($largeMobile) {
+  .header__nav {
+    height: 72px;
+  }
+
+  .header__login.button {
+    font-size: 14px;
+  }
+
+  main {
+    padding: 60px 0px 90px;
+  }
+
+  .form {
+    padding: 40px 30px 50px;
+  }
+
+  .form__head-heading {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .form__head-text {
+    font-size: 12px;
+  }
+
+  .form__content {
+    width: 340px;
+  }
+
+  .form__content + .form__condition {
+    margin-top: 16px;
+  }
+
+  .form__condition {
+    max-width: 340px;
+  }
+}
+
+@media ($mobile) {
+  .header__nav {
+    height: 65px;
+  }
+
+  .header__login.button {
+    font-size: 14px;
+  }
+
+  main {
+    padding: 40px 0px 80px;
+  }
+
+  .form {
+    padding: 40px 25px 25px;
+
+    &__head-heading {
+      max-width: 100%;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &__head-text.big {
+      font-size: 14px;
+    }
+
+    &__head + &__content {
+      margin-top: 16px;
+    }
+
+    &__content {
+      width: 230px;
+      row-gap: 12px;
+
+      &-input-wrapper {
+        row-gap: 4px;
+      }
+    }
+
+    &__condition {
+      max-width: 230px;
+
+      &-input:checked + &-input-text::after {
+        top: 6px;
+      }
+    }
+  }
+}

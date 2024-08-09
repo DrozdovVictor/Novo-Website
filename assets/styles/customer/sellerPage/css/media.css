@@ -1,0 +1,71 @@
+@import '/assets/styles/seller/main/css/media.css';
+@import '/assets/styles/customer/main/css/media.css';
+/* Variables */
+@media (max-width: 1919px) {
+  .seller-info__heading {
+    font-size: 35px;
+    line-height: 52.5px;
+  }
+  .seller-ads .main__content-row {
+    max-width: 640px;
+  }
+  .seller-about {
+    padding: 40px 0px;
+  }
+  .seller-about__text {
+    max-width: 880px;
+  }
+}
+@media (max-width: 999px) {
+  .seller-ads {
+    padding: 25px 0px 90px;
+  }
+  .open-filter-btn {
+    display: flex;
+  }
+  .seller-filter {
+    display: none;
+    width: 100%;
+  }
+  .seller-filter.active {
+    display: block;
+  }
+  .seller-ads .main__content-row {
+    max-width: 100%;
+  }
+  .seller-about__text {
+    max-width: 100%;
+  }
+  .seller-ads .main__content-row .wrapper {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .seller-info__heading {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .seller-ads {
+    padding: 40px 0px;
+  }
+  .main__content-card {
+    max-width: 275px;
+  }
+  .seller-ads .main__content-row .wrapper {
+    margin-top: 10px;
+  }
+  .seller-about__heading + .seller-about__subheading,
+  .seller-about__text + .seller-about__subheading {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 479px) {
+  .header__login.button.profile {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+  .seller-info__heading {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}/*# sourceMappingURL=media.css.map */

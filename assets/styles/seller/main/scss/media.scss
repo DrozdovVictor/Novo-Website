@@ -1,0 +1,707 @@
+@import '/assets/styles/customer/customerProfile/css/media.css';
+@import '/assets/styles/sellerRegistration/css/style.css';
+@import '../../../../../Ui_Kit/scss/variables/sellerRegistration/variables';
+
+@media ($laptop) {
+  h1 {
+    font-size: 35px;
+    line-height: 52px;
+  }
+
+  .header__logo {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .main__ads {
+    padding: 50px 0px 120px;
+  }
+
+  .main__content .main__settings {
+    padding: 0px;
+  }
+
+  .main__content {
+    // Main ads
+    padding: 0px;
+
+    &-heading + &-input-wrapper {
+      margin-top: 40px;
+    }
+
+    &-input-wrapper-img {
+      top: 15px;
+      left: 24px;
+    }
+
+    &-input {
+      padding: 14px 22px 14px 54px;
+    }
+
+    &-row {
+      gap: 20px;
+    }
+
+    &-card {
+      max-width: 307px;
+
+      &-category-text {
+        line-height: 16.8px;
+      }
+
+      &-heading {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      &-geo-text {
+        line-height: 16.8px;
+      }
+
+      &-price {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+      }
+    }
+
+    // Main settings
+
+    .main__settings {
+      padding: 50px 0px 120px;
+    }
+
+    .main__content-heading + .main__settings-accordions {
+      margin-top: 40px;
+    }
+
+    .main__settings-accordion .form__content-input-wrapper {
+      padding-right: 40px;
+    }
+  }
+
+  // Main settings modal
+
+  .main__settings-modal {
+    width: 750px;
+    padding: 95px 0px;
+  }
+
+  // Main subscription
+
+  .main__subscription .main__content-heading {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .main__subscription-line {
+    margin: 80px 0px 70px;
+  }
+
+  .main__plan {
+    width: 310px;
+  }
+
+  // Main add item
+  .main__addItem {
+    padding: 40px 0px 150px;
+  }
+
+  .main__addItem-head-heading {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main__addItem-content {
+    padding: 40px;
+  }
+
+  .main__content-heading + .main__addItem-head,
+  .main__addItem-content + .wrapper,
+  .mail__addItem-form-inputs + .mail__addItem-form-media,
+  .mail__addItem-form-media + .main__addItem-description {
+    margin-top: 40px;
+  }
+
+  .main__addItem > .wrapper {
+    margin-bottom: 20px;
+  }
+}
+
+@media ($tablet) {
+  .main {
+    padding: 29px 0px 0px 0px;
+
+    .main__content {
+      padding: 0px;
+    }
+
+    &__content-card:hover:hover {
+      transform: none;
+    }
+
+    &__header {
+      .container {
+        row-gap: 30px;
+      }
+
+      &-nav {
+        column-gap: 40px;
+      }
+    }
+
+    &__content-input,
+    &__content-input-button {
+      width: auto;
+      flex-grow: 1;
+    }
+
+    &__content-input-button {
+      justify-content: center;
+    }
+
+    &__content-card {
+      max-width: 354px;
+    }
+
+    // Main settings
+
+    .main__content .main__settings {
+      padding: 40px 0px 80px;
+    }
+
+    .main__settings-accordion .form__content-input-wrapper {
+      padding-right: 20px;
+    }
+
+    // Main settings modal
+
+    .main__settings-modal {
+      width: 600px;
+      padding: 75px 0px;
+    }
+
+    .main__settings-modal.password {
+      &-heading {
+        max-width: 270px;
+      }
+    }
+
+    // Main subscription
+
+    .main__subscription {
+      padding: 40px 0px 110px;
+    }
+
+    .main__plan {
+      width: 230px;
+    }
+
+    .main__plan-price span {
+      font-size: 30px;
+      line-height: 45px;
+    }
+
+    .main__plan-date + .main__plan-date {
+      margin-top: 30px;
+    }
+
+    .main__plan-date + .main__plan-explanation {
+      margin-top: 70px;
+    }
+
+    .main__other-plans-info-content .main__content-heading {
+      max-width: 230px;
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    // Main add item
+
+    .main__addItem {
+      padding: 40px 0px 120px;
+    }
+
+    .main__addItem-content {
+      padding: 40px 30px;
+    }
+
+    .main__addItem-content .form__content-input-wrapper {
+      width: 320px;
+    }
+  }
+}
+
+@media ($largeMobile) {
+  h1 {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 45px;
+  }
+
+  .header {
+    &__nav {
+      height: 72px;
+    }
+
+    &__logo {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__login.button {
+      padding: 6px 14px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  .main {
+    padding: 24px 0px 0px 0px;
+
+    &__header {
+      .container {
+        row-gap: 24px;
+      }
+
+      &-nav-item-text.desctop {
+        display: none;
+      }
+
+      &-nav {
+        column-gap: 30px;
+      }
+    }
+
+    &__header-nav-item.mobile {
+      width: 30px;
+      height: 40px;
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        position: absolute;
+        top: -5px;
+        left: 3px;
+      }
+    }
+
+    &__header-nav-item.desctop {
+      display: none;
+    }
+
+    &__content {
+      padding: 40px 0px 100px;
+
+      &-heading {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+      }
+
+      &-input-wrapper {
+        flex-direction: column-reverse;
+        row-gap: 20px;
+
+        &-img {
+          top: 88px;
+        }
+      }
+
+      &-input {
+        padding: 14px 22px 14px 54px;
+      }
+
+      &-card {
+        max-width: 210px;
+        padding: 12px 12px 18px;
+
+        &-category-text {
+          font-size: 12px;
+          line-height: 14.4px;
+        }
+
+        &-category-text + &-heading {
+          margin-top: 4px;
+        }
+
+        &-heading {
+          font-size: 14px;
+          line-height: 21px;
+        }
+
+        &-row-item {
+          padding: 0px 4px;
+
+          font-size: 12px;
+          line-height: 24px;
+        }
+
+        &-line + &-geoPrice {
+          margin-top: 12px;
+        }
+
+        &-geo {
+          img {
+            display: none;
+          }
+        }
+      }
+
+      // Main settings
+
+      .main__content {
+        padding: 40px 0px 60px;
+      }
+
+      .main__settings-accordion-content-form {
+        flex-direction: column;
+        row-gap: 30px;
+      }
+
+      .form__content-part {
+        width: 100%;
+        gap: 16px;
+      }
+
+      .main__settings-accordion .form__content-part-btn {
+        margin-top: 8px;
+      }
+
+      .main__settings-accordion.second .form__content-part {
+        gap: 24px;
+      }
+
+      .main__settings-accordion.second .form__content-part-wrapper {
+        flex-direction: column;
+      }
+
+      .main__settings-accordion .form__content-input-wrapper {
+        width: 100%;
+        padding: 0px;
+      }
+
+      .main__settings-accordion
+        .form__content-part-wrapper
+        + .main__settings-accordion-content-form-heading {
+        margin-top: 0px;
+      }
+
+      .main__settings-accordion.second .form__content-part-wrapper:nth-child(4) {
+        margin-top: -16px;
+      }
+
+      .main__settings-accordion-content-form-heading
+        + .main__settings-accordion
+        .form__content-textarea {
+        margin-top: 8px;
+      }
+
+      .main__settings-accordion .form__content-textarea {
+        width: 100%;
+      }
+
+      .main__settings-accordion .form__content-textarea {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  // Main settings modal
+
+  .main .main__settings-modal {
+    width: 440px;
+    padding: 60px 0px;
+  }
+
+  .main__settings-modal {
+    &-heading {
+      max-width: 275px;
+      font-size: 30px;
+      line-height: 50px;
+    }
+
+    &-heading + &-text {
+      margin-top: 16px;
+    }
+
+    &-text + &-btn {
+      margin-top: 40px;
+    }
+  }
+
+  .main__settings-modal.password .main__settings-modal-heading {
+    max-width: 250px;
+  }
+
+  // Main subscription
+
+  .main__subscription {
+    padding: 40px 0px 90px;
+  }
+
+  .main__subscription .main__content-heading {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .main__subscription-line {
+    margin: 60px 0px;
+  }
+
+  .main__plan-row {
+    flex-wrap: wrap;
+    row-gap: 25px;
+  }
+
+  .main__plan-row .main__plan {
+    padding: 30px 25px;
+    width: 210px;
+  }
+
+  .main__plan-row > .main__plan-explanation {
+    max-width: 420px;
+    display: inline;
+  }
+
+  .main__plan-info .main__plan-explanation {
+    display: none;
+  }
+
+  .main__other-plans-row {
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+
+  .main__other-plans-row .main__plan {
+    flex-grow: 1;
+  }
+
+  .main__other-plans-info {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .main .main__other-plans-info-content .main__content-heading {
+    max-width: 400px;
+  }
+
+  // Main add item
+  .main__addItem {
+    padding: 40px 0px 90px;
+  }
+
+  .mail__addItem-form-inputs,
+  .main__content .form__content-part {
+    row-gap: 26px;
+  }
+
+  .main__content .form__content-part {
+    justify-content: center;
+  }
+
+  .form__content-input-wrapper {
+    row-gap: 4px;
+  }
+
+  .mail__addItem-form-inputs + .mail__addItem-form-media,
+  .mail__addItem-form-media + .main__addItem-description {
+    margin-top: 30px;
+  }
+
+  .mail__addItem-form-media-mainFile,
+  .mail__addItem-form-media-file {
+    width: 183px;
+  }
+
+  .mail__addItem-form-media-files {
+    margin: 0px auto;
+    max-width: 378px;
+  }
+
+  .main__addItem-add-media {
+    margin: 0px auto;
+  }
+
+  .main__addItem-description-text {
+    margin: 0 auto;
+    width: 380px;
+  }
+}
+
+@media ($mobile) {
+  button {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .header__nav {
+    height: 65px;
+  }
+
+  .main__header-nav {
+    column-gap: 20px;
+  }
+
+  .main__content-heading {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+
+  .main__content-input-button.static {
+    padding: 16px 0px;
+    min-width: 100%;
+  }
+
+  .main__content-card {
+    max-width: 100%;
+  }
+
+  .main__loadMoreBtn {
+    width: 100%;
+  }
+
+  // Main settings
+
+  .main__settings .main__content-heading {
+    font-size: 18px;
+    span {
+      font-size: 14px;
+    }
+  }
+
+  .main__settings-accordion-content-head + .main__settings-accordion-content-form {
+    margin-top: 30px;
+  }
+
+  .main__content .main__settings-accordion-content-form {
+    row-gap: 40px;
+  }
+
+  .main__settings-accordion.second .form__content-part-wrapper {
+    row-gap: 12px;
+  }
+
+  .main__settings-accordion .form__content-part-btn {
+    width: 100%;
+  }
+
+  .main__content .main__settings-accordion .form__content-textarea {
+    margin-bottom: 0px;
+  }
+
+  // Main settings modal
+
+  .main .main__settings-modal {
+    width: 100vh;
+    height: 100vh;
+    padding: 0px;
+    border-radius: 0px;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .main__settings-modal {
+    &-heading {
+      max-width: 195px;
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    &-heading + &-text {
+      margin-top: 12px;
+    }
+
+    &-text {
+      max-width: 240px;
+    }
+
+    &-text + &-btn {
+      margin-top: 40px;
+    }
+  }
+
+  .main__settings-modal.password .main__settings-modal-heading {
+    max-width: 140px;
+  }
+
+  // Main subscription
+
+  .main__subscription .main__content-heading {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+
+  .main__subscription {
+    padding: 45px 0px 80px;
+  }
+
+  .main__plan-row {
+    flex-direction: column;
+  }
+
+  .main__plan-row .main__plan {
+    width: 100%;
+  }
+
+  .main__plan-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main .main__plan-date + .main__plan-date {
+    margin-top: 0px;
+  }
+
+  .main__other-plans-info-content {
+    align-items: stretch;
+    row-gap: 24px;
+  }
+
+  // Main add item
+
+  .mail__addItem-form-inputs,
+  .main__content .form__content-part {
+    row-gap: 12px;
+  }
+
+  .main .main__addItem-content .form__content-input-wrapper {
+    width: 100%;
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .mail__addItem-form-media-mainFile,
+  .mail__addItem-form-media-file {
+    width: 100%;
+    height: 60px;
+  }
+
+  .mail__addItem-form-media-mainFile-text {
+    max-width: 170px;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+
+  .main__addItem-description-text {
+    width: 100%;
+  }
+
+  .main__addItem > .wrapper {
+    margin-bottom: 10px;
+  }
+
+  .main__addItem-btn {
+    width: 100%;
+  }
+}

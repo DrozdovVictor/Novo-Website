@@ -1,0 +1,119 @@
+@import '/assets/styles/sellerRegistration/css/style.css';
+@import '../../../../Ui_Kit/scss/variables/sellerRegistration/variables';
+
+$btn-bg-color: rgba(70, 137, 102, 0.06);
+
+@mixin flexColumnPattern($rg: 0px, $ai: center) {
+  display: flex;
+  flex-direction: column;
+  align-items: $ai;
+  row-gap: $rg;
+}
+
+p {
+  font-weight: 500;
+}
+
+// Header
+.header__logo {
+  font-size: 30px;
+  color: $main-green;
+}
+
+.header__login.button {
+  border-color: $btn-bg-color;
+  background-color: $btn-bg-color;
+  color: $main-green;
+}
+
+.header__login.button:hover {
+  border-color: $main-green;
+  background-color: $btn-bg-color;
+}
+
+// Main
+main {
+  padding: 90px 0px 150px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.form {
+  padding: 60px 90px 70px;
+
+  &__head-heading {
+    font-weight: 900;
+  }
+
+  &__head-text {
+    max-width: 215px;
+    text-align: center;
+  }
+
+  &__head + &__content {
+    margin-top: 40px;
+  }
+
+  &__content {
+    width: 420px;
+    @include flexColumnPattern(16px);
+
+    &-input-wrapper {
+      width: 100%;
+      row-gap: 4px;
+    }
+  }
+
+  &__content + &__condition {
+    margin-top: 20px;
+  }
+
+  &__condition {
+    width: 420px;
+
+    &-input-text {
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    &-input-text::before {
+      top: 3px;
+    }
+
+    &-input:checked + &-input-text::after {
+      top: 0px;
+    }
+  }
+
+  &__condition + &__button {
+    margin-top: 40px;
+  }
+}
+
+.form + .logIn {
+  margin-top: 30px;
+}
+
+.logIn {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+
+  &__text {
+    font-size: 16px;
+    color: $heading-text-default-color;
+    font-weight: 600;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    color: $main-green;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,481 @@
+/* Variables */
+/* Variables */
+@media (max-width: 1919px) {
+  h1 {
+    font-size: 50px;
+    line-height: 75px;
+  }
+  h3 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 999px) {
+  h1 {
+    font-size: 45px;
+    line-height: 67px;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 35px;
+    line-height: 52px;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 479px) {
+  h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  h2 {
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+  }
+  h5 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media (max-width: 1919px) {
+  .hero {
+    padding: 160px 0px 300px;
+  }
+  .hero__heading + .hero__button {
+    margin-top: 34px;
+  }
+  h5 + .about__title {
+    margin-top: 16px;
+  }
+  .about__title {
+    max-width: 700px;
+  }
+  .about__categories {
+    height: 400px;
+  }
+  .about__category {
+    padding: 0px 16px 16px;
+    width: 225px;
+    height: 320px;
+    background: linear-gradient(to top, rgba(20, 20, 22, 0.8), 20%, rgba(20, 20, 22, 0.5), 40%, rgba(20, 20, 22, 0), 60%, transparent), url("../../../Images/main/about/laptop/transport-laptop.png") no-repeat center;
+  }
+  .about__category:nth-child(2) {
+    background: linear-gradient(to top, rgba(20, 20, 22, 0.8), 20%, rgba(20, 20, 22, 0.5), 40%, rgba(20, 20, 22, 0), 60%, transparent), url("../../../Images/main/about/laptop/technic-laptop.png") no-repeat center;
+  }
+  .about__category:nth-child(3) {
+    background: linear-gradient(to top, rgba(20, 20, 22, 0.8), 20%, rgba(20, 20, 22, 0.5), 40%, rgba(20, 20, 22, 0), 60%, transparent), url("../../../Images/main/about/laptop/excavator-laptop.png") no-repeat center;
+  }
+  .about__category:nth-child(4) {
+    background: linear-gradient(to top, rgba(20, 20, 22, 0.8), 20%, rgba(20, 20, 22, 0.5), 40%, rgba(20, 20, 22, 0), 60%, transparent), url("../../../Images/main/about/laptop/equioment-laptop.png") no-repeat center;
+  }
+  .features {
+    padding: 80px 0px 370px;
+    background: url("../../../Images/main/features/section-bg-laptop.png") no-repeat bottom center, rgb(27, 27, 30);
+  }
+  .features__list {
+    height: 90px;
+    justify-content: space-around;
+  }
+  .pricing__title + .pricing__plans {
+    margin-top: 110px;
+  }
+  .pricing__plan-title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .steps__container {
+    row-gap: 95px;
+  }
+  .steps__item {
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+  }
+  .steps__item-title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .steps__item.reverse {
+    flex-direction: row-reverse;
+    -moz-column-gap: 130px;
+         column-gap: 130px;
+  }
+  .steps__list + .steps__btn {
+    margin-top: 25px;
+  }
+  .footer {
+    padding: 40px 0px 20px;
+  }
+  .footer__logo-text {
+    max-width: 250px;
+  }
+  .footer__menu {
+    flex-direction: column;
+  }
+  .footer__menu-link + .footer__menu-link {
+    margin-top: -4px;
+  }
+}
+@media (max-width: 999px) {
+  .header__nav-menu {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  .hero {
+    padding: 160px 0px 200px;
+    background: linear-gradient(90deg, rgb(20, 20, 22), 40%, transparent), url("../../../Images/main/header/tractor-laptop.png") no-repeat center bottom;
+  }
+  .about {
+    padding: 90px 0px 150px;
+  }
+  .about__title {
+    max-width: 600px;
+  }
+  .about__title + .about__categories-wrapper {
+    margin-top: 20px;
+  }
+  .about__categories {
+    height: 290px;
+  }
+  .about__category {
+    width: 170px;
+    height: 230px;
+    background: linear-gradient(to top, rgba(20, 20, 22, 0.8), 20%, rgba(20, 20, 22, 0.5), 40%, rgba(20, 20, 22, 0), 60%, transparent), url("../../../Images/main/about/tablet/transport-tablet.png") no-repeat center;
+  }
+  .about__category:nth-child(2) {
+    background: linear-gradient(to top, rgba(20, 20, 22, 0.8), 20%, rgba(20, 20, 22, 0.5), 40%, rgba(20, 20, 22, 0), 60%, transparent), url("../../../Images/main/about/tablet/technic-tablet.png") no-repeat center;
+  }
+  .about__category:nth-child(3) {
+    background: linear-gradient(to top, rgba(20, 20, 22, 0.8), 20%, rgba(20, 20, 22, 0.5), 40%, rgba(20, 20, 22, 0), 60%, transparent), url("../../../Images/main/about/tablet/exavator-tablet.png") no-repeat center;
+  }
+  .about__category:nth-child(4) {
+    background: linear-gradient(to top, rgba(20, 20, 22, 0.8), 20%, rgba(20, 20, 22, 0.5), 40%, rgba(20, 20, 22, 0), 60%, transparent), url("../../../Images/main/about/tablet/equipment-tablet.png") no-repeat center;
+  }
+  .features {
+    padding: 80px 0px 350px;
+    background: url("../../../Images/main/features/section-bg-tablet.png") no-repeat bottom center, rgb(27, 27, 30);
+  }
+  .pricing {
+    padding: 150px 0px;
+  }
+  .pricing__plan {
+    min-width: 230px;
+  }
+  .pricing__plan-title, .pricing__plan-price-number {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .pricing-modal__content {
+    padding: 60px 80px;
+  }
+  .pricing-modal__content-close {
+    top: 16px;
+    right: 16px;
+  }
+  .pricing-modal__content-title {
+    max-width: 250px;
+  }
+  .pricing-modal__content-title + .pricing-modal__content-text {
+    margin-top: 16px;
+  }
+  .pricing-modal__content-text {
+    max-width: 235px;
+  }
+  .pricing-modal__content-text + .pricing-modal__content-form {
+    margin-top: 32px;
+  }
+  .steps {
+    padding: 100px 0px;
+  }
+  .steps__container {
+    row-gap: 80px;
+  }
+  .steps__item, .steps__item.reverse {
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+  }
+  .steps__list + .steps__btn {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 767px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h6 {
+    text-align: center;
+  }
+  .header__nav {
+    height: 88px;
+  }
+  .header__nav-mobile-open-btn {
+    display: block;
+  }
+  .header__login, .header__nav-menu {
+    display: none;
+  }
+  .hero {
+    padding: 210px 0px 50px;
+    background: linear-gradient(to top, rgb(20, 20, 22), 40%, transparent), url("../../../Images/main/header/tractor-tablet.png") no-repeat center;
+  }
+  .hero__container {
+    align-items: center;
+    row-gap: 8px;
+  }
+  .hero__heading {
+    max-width: 400px;
+  }
+  .hero__heading + .hero__button {
+    margin-top: 32px;
+  }
+  .about {
+    padding: 80px 0px 120px;
+  }
+  h5 + .about__title {
+    margin-top: 8px;
+  }
+  .about__title {
+    max-width: 500px;
+  }
+  .about__title + .about__categories-wrapper {
+    margin-top: 40px;
+  }
+  .about__categories {
+    height: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "item1 item2" "item3 item4";
+    gap: 30px 20px;
+  }
+  .about__category:first-child {
+    grid-area: "item1";
+  }
+  .about__category:nth-child(2) {
+    margin-top: 30px;
+    grid-area: "item2";
+  }
+  .about__category:nth-child(3) {
+    margin-top: -30px;
+    grid-area: "item3";
+  }
+  .about__category:nth-child(4) {
+    grid-area: "item4";
+  }
+  .features {
+    padding: 60px 0px 250px;
+    background: url("../../../Images/main/features/section-bg-largeModile.png") no-repeat bottom center, rgb(27, 27, 30);
+  }
+  .features__list {
+    height: 70px;
+    justify-content: space-evenly;
+  }
+  .features__item, .features__item:nth-child(2) {
+    max-width: 120px;
+  }
+  .pricing {
+    padding: 120px 0px 100px;
+  }
+  .pricing__subtitle + .pricing__title {
+    margin-top: 8px;
+  }
+  .pricing__title {
+    max-width: 350px;
+  }
+  .pricing__title + .pricing__plans {
+    margin-top: 60px;
+  }
+  .pricing__plans {
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+  }
+  .pricing__plan {
+    min-width: 250px;
+  }
+  .pricing__plans + .pricing__ad {
+    margin-top: 170px;
+  }
+  .pricing__ad {
+    width: 100%;
+    position: relative;
+    justify-content: center;
+  }
+  .pricing__ad picture {
+    position: absolute;
+    bottom: 50px;
+    z-index: -1;
+  }
+  .pricing__ad-content {
+    padding: 40px 24px;
+    flex-grow: 0;
+    row-gap: 8px;
+  }
+  .pricing__ad-content h5,
+  .pricing__ad-content p {
+    max-width: 280px;
+    text-align: center;
+  }
+  .pricing__ad-content p + button {
+    margin-top: 32px;
+  }
+  .pricing__ad-content button {
+    margin: 0 auto;
+  }
+  .steps {
+    padding: 80px 0px;
+  }
+  .steps__container {
+    row-gap: 60px;
+  }
+  .steps__list {
+    row-gap: 80px;
+  }
+  .steps__item, .steps__item.reverse {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .steps__item-title {
+    text-align: center;
+  }
+  .steps__list + .steps__btn {
+    margin-top: 20px;
+  }
+  .footer__container {
+    row-gap: 40px;
+  }
+  .footer__logo {
+    width: 100%;
+  }
+  .footer__logo h2 {
+    text-align: start;
+  }
+  .footer__logo-text {
+    max-width: 320px;
+  }
+  .footer__menu {
+    padding-left: 45px;
+  }
+}
+@media (max-width: 479px) {
+  .hero {
+    padding: 130px 0px 50px;
+    background: linear-gradient(to top, rgb(20, 20, 22), 40%, transparent), url("../../../Images/main/header/tractor-largeMobile.png") no-repeat center;
+  }
+  .hero__heading {
+    max-width: 280px;
+  }
+  .about {
+    padding: 60px 0px 100px;
+  }
+  .about__title + .about__categories-wrapper {
+    margin-top: 40px;
+  }
+  .about__categories-wrapper {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+  .about__categories-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .about__categories {
+    display: flex;
+    justify-content: flex-start;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .about__category {
+    min-width: 170px;
+  }
+  .about__category:nth-child(2), .about__category:nth-child(3) {
+    margin: 0px;
+  }
+  .about__category-title {
+    max-width: 100px;
+  }
+  .features {
+    padding: 50px 0px 190px;
+    background: url("../../../Images/main/features/section-bg-mobile.png") no-repeat bottom center, rgb(27, 27, 30);
+  }
+  .features__list {
+    height: 50px;
+    justify-content: space-between;
+  }
+  .features__item {
+    max-width: 110px;
+  }
+  .features__item:nth-child(2) {
+    max-width: 100px;
+  }
+  .pricing {
+    padding: 100px 0px;
+  }
+  .pricing__title + .pricing__plans {
+    margin-top: 40px;
+  }
+  .pricing__ad {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+  .pricing__ad-content {
+    width: 100%;
+    align-items: center;
+  }
+  .pricing-modal__content {
+    width: 100%;
+    height: 100%;
+    padding: 90px 40px;
+  }
+  .pricing-modal__content-close {
+    top: 13px;
+    right: 13px;
+  }
+  .pricing-modal__content-title {
+    max-width: 210px;
+  }
+  .pricing-modal__content-text + .pricing-modal__content-form {
+    margin-top: 40px;
+  }
+  .pricing-modal__content-form div + button {
+    margin-top: 40px;
+  }
+  .steps__container {
+    row-gap: 80px;
+  }
+  .steps__item, .steps__item.reverse {
+    row-gap: 24px;
+  }
+  .steps__list + .steps__btn {
+    margin-top: 0px;
+  }
+  .footer {
+    padding: 30px 0px 20px;
+  }
+  .footer__logo, .footer__menu, .footer__socials {
+    padding: 0px;
+  }
+  .footer__menu-link {
+    max-width: 145px;
+  }
+}
+@media (max-width: 319px) {
+  .hero {
+    background: linear-gradient(to top, rgb(20, 20, 22), 40%, transparent), url("../../../Images/main/header/tractor-mobile.png") no-repeat center;
+  }
+}/*# sourceMappingURL=media.css.map */

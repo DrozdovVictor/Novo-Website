@@ -1,0 +1,159 @@
+@import '/assets/styles/seller/main/css/media.css';
+@import '../../../../../Ui_Kit/scss/variables/main/variables';
+
+@media ($laptop) {
+  .header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .main {
+    padding: 30px 0px 100px;
+  }
+
+  .main__item-heading {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .main__item-info-devider {
+    margin: 16px 0px;
+  }
+
+  .main__item-characteristic + .main__item-description {
+    margin-top: 80px;
+  }
+
+  .main__item-characteristic {
+    width: 630px;
+
+    &-item-text {
+      max-width: 190px;
+    }
+  }
+
+  .main__item-description {
+    width: 630px;
+  }
+}
+
+@media ($tablet) {
+  .main__item-heading {
+    max-width: 700px;
+  }
+
+  .main__item-preview {
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 20px;
+  }
+
+  .main__item-images {
+    flex-direction: row;
+    column-gap: 10px;
+
+    & > picture {
+      flex-grow: 1;
+    }
+  }
+
+  .main__item-images-row {
+    flex-direction: column;
+    row-gap: 10px;
+
+    img {
+      height: 140px;
+    }
+  }
+
+  .main__item-characteristic,
+  .main__item-description {
+    width: 490px;
+  }
+}
+
+@media ($largeMobile) {
+  .header__logo {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .main {
+    padding: 25px 0px 80px;
+  }
+  .main__item-images {
+    margin: 0px -20px;
+  }
+
+  .main__item-images-row {
+    display: none;
+  }
+
+  .main__item-close-link + .main__item-preview {
+    margin-top: 25px;
+  }
+
+  .main__item-preview + .main__item-characteristic,
+  .main__item-characteristic + .main__item-description {
+    margin-top: 60px;
+  }
+
+  .main__item-characteristic,
+  .main__item-description {
+    width: 100%;
+  }
+}
+
+@media ($mobile) {
+  .header__logo {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  picture img {
+    height: 100%;
+  }
+
+  .main {
+    padding: 16px 0px 80px;
+  }
+
+  .main__item-close-link + .main__item-preview {
+    margin-top: 16px;
+  }
+
+  .main__item-heading {
+    max-width: 280px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main__item-images {
+    margin: 0px;
+    gap: 0px;
+  }
+
+  .main__item-preview {
+    margin: 0px -20px;
+    row-gap: 0px;
+  }
+
+  .main__item-info {
+    border-radius: 0px;
+  }
+
+  .main__item-characteristic,
+  .main__item-description {
+    row-gap: 25px;
+  }
+
+  .main__item-characteristic-col {
+    margin: 0px -20px;
+  }
+
+  .main__item-characteristic-item {
+    flex-direction: column;
+    border-radius: 0px;
+  }
+}

@@ -1,0 +1,154 @@
+@import '../../main/css/media.css';
+@import '../../../../Ui_Kit/scss/variables/sellerRegistration/variables';
+
+@media ($laptop) {
+  h1 {
+    font-size: 35px;
+    line-height: 52.5px;
+  }
+
+  main {
+    padding: 90px 0px 90px;
+  }
+
+  .form {
+    padding: 60px;
+  }
+
+  .form__content-part {
+    width: 590px;
+  }
+
+  .form__condition-input-text {
+    display: block;
+    max-width: 560px;
+  }
+}
+
+@media ($tablet) {
+  main {
+    padding: 60px 0px 90px;
+  }
+}
+
+@media ($largeMobile) {
+  h1 {
+    font-size: 30px;
+    line-height: 33px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h6 {
+    text-align: start;
+  }
+
+  .header__nav {
+    height: 72px;
+  }
+
+  .header__login.button {
+    display: block;
+    padding: 8px 16px;
+
+    font-size: 14px;
+  }
+
+  main {
+    padding: 60px 0px 90px;
+  }
+
+  .form {
+    padding: 40px 30px 50px;
+
+    &__head {
+      max-width: 270px;
+      text-align: center;
+    }
+
+    &__head + &__content {
+      margin-top: 32px;
+    }
+
+    &__content {
+      row-gap: 32px;
+
+      &-part {
+        width: 335px;
+        gap: 16px 0px;
+      }
+
+      &-input-wrapper {
+        width: 100%;
+        row-gap: 4px;
+      }
+    }
+
+    &__condition {
+      max-width: 320px;
+    }
+
+    &__condition + &__button {
+      margin-top: 32px;
+    }
+  }
+}
+
+@media ($mobile) {
+  h1 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .header__nav {
+    height: 65px;
+  }
+
+  main {
+    padding: 40px 0px 80px;
+  }
+
+  .form {
+    padding: 40px 25px 25px;
+
+    &__head-heading {
+      max-width: 140px;
+    }
+
+    &__head-text {
+      line-height: 16.8px;
+    }
+
+    &__head + &__content {
+      margin-top: 50px;
+    }
+
+    &__content {
+      row-gap: 24px;
+
+      &-part {
+        width: 230px;
+        row-gap: 12px;
+      }
+    }
+
+    &__condition-input-text {
+      font-size: 12px;
+      line-height: 14.4px;
+    }
+
+    &__condition {
+      width: 230px;
+
+      &-input:checked + &-input-text::after {
+        top: 5px;
+      }
+    }
+
+    &__button {
+      width: 230px;
+    }
+  }
+}

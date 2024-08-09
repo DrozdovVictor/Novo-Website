@@ -1,0 +1,120 @@
+@import '../../main/css/media.css';
+/* Variables */
+@media (max-width: 1919px) {
+  h1 {
+    font-size: 35px;
+    line-height: 52.5px;
+  }
+  main {
+    padding: 90px 0px 90px;
+  }
+  .form {
+    padding: 60px;
+  }
+  .form__content-part {
+    width: 590px;
+  }
+  .form__condition-input-text {
+    display: block;
+    max-width: 560px;
+  }
+}
+@media (max-width: 999px) {
+  main {
+    padding: 60px 0px 90px;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 30px;
+    line-height: 33px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h6 {
+    text-align: start;
+  }
+  .header__nav {
+    height: 72px;
+  }
+  .header__login.button {
+    display: block;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  main {
+    padding: 60px 0px 90px;
+  }
+  .form {
+    padding: 40px 30px 50px;
+  }
+  .form__head {
+    max-width: 270px;
+    text-align: center;
+  }
+  .form__head + .form__content {
+    margin-top: 32px;
+  }
+  .form__content {
+    row-gap: 32px;
+  }
+  .form__content-part {
+    width: 335px;
+    gap: 16px 0px;
+  }
+  .form__content-input-wrapper {
+    width: 100%;
+    row-gap: 4px;
+  }
+  .form__condition {
+    max-width: 320px;
+  }
+  .form__condition + .form__button {
+    margin-top: 32px;
+  }
+}
+@media (max-width: 479px) {
+  h1 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .header__nav {
+    height: 65px;
+  }
+  main {
+    padding: 40px 0px 80px;
+  }
+  .form {
+    padding: 40px 25px 25px;
+  }
+  .form__head-heading {
+    max-width: 140px;
+  }
+  .form__head-text {
+    line-height: 16.8px;
+  }
+  .form__head + .form__content {
+    margin-top: 50px;
+  }
+  .form__content {
+    row-gap: 24px;
+  }
+  .form__content-part {
+    width: 230px;
+    row-gap: 12px;
+  }
+  .form__condition-input-text {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+  .form__condition {
+    width: 230px;
+  }
+  .form__condition-input:checked + .form__condition-input-text::after {
+    top: 5px;
+  }
+  .form__button {
+    width: 230px;
+  }
+}/*# sourceMappingURL=media.css.map */

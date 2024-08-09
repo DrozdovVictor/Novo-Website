@@ -1,0 +1,516 @@
+@import '/assets/styles/customer/customerProfile/css/media.css';
+@import '/assets/styles/sellerRegistration/css/style.css';
+/* Variables */
+@media (max-width: 1919px) {
+  h1 {
+    font-size: 35px;
+    line-height: 52px;
+  }
+  .header__logo {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .main__ads {
+    padding: 50px 0px 120px;
+  }
+  .main__content .main__settings {
+    padding: 0px;
+  }
+  .main__content {
+    padding: 0px;
+  }
+  .main__content-heading + .main__content-input-wrapper {
+    margin-top: 40px;
+  }
+  .main__content-input-wrapper-img {
+    top: 15px;
+    left: 24px;
+  }
+  .main__content-input {
+    padding: 14px 22px 14px 54px;
+  }
+  .main__content-row {
+    gap: 20px;
+  }
+  .main__content-card {
+    max-width: 307px;
+  }
+  .main__content-card-category-text {
+    line-height: 16.8px;
+  }
+  .main__content-card-heading {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .main__content-card-geo-text {
+    line-height: 16.8px;
+  }
+  .main__content-card-price {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .main__content .main__settings {
+    padding: 50px 0px 120px;
+  }
+  .main__content .main__content-heading + .main__settings-accordions {
+    margin-top: 40px;
+  }
+  .main__content .main__settings-accordion .form__content-input-wrapper {
+    padding-right: 40px;
+  }
+  .main__settings-modal {
+    width: 750px;
+    padding: 95px 0px;
+  }
+  .main__subscription .main__content-heading {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .main__subscription-line {
+    margin: 80px 0px 70px;
+  }
+  .main__plan {
+    width: 310px;
+  }
+  .main__addItem {
+    padding: 40px 0px 150px;
+  }
+  .main__addItem-head-heading {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .main__addItem-content {
+    padding: 40px;
+  }
+  .main__content-heading + .main__addItem-head,
+  .main__addItem-content + .wrapper,
+  .mail__addItem-form-inputs + .mail__addItem-form-media,
+  .mail__addItem-form-media + .main__addItem-description {
+    margin-top: 40px;
+  }
+  .main__addItem > .wrapper {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 999px) {
+  .main {
+    padding: 29px 0px 0px 0px;
+  }
+  .main .main__content {
+    padding: 0px;
+  }
+  .main__content-card:hover:hover {
+    transform: none;
+  }
+  .main__header .container {
+    row-gap: 30px;
+  }
+  .main__header-nav {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  .main__content-input, .main__content-input-button {
+    width: auto;
+    flex-grow: 1;
+  }
+  .main__content-input-button {
+    justify-content: center;
+  }
+  .main__content-card {
+    max-width: 354px;
+  }
+  .main .main__content .main__settings {
+    padding: 40px 0px 80px;
+  }
+  .main .main__settings-accordion .form__content-input-wrapper {
+    padding-right: 20px;
+  }
+  .main .main__settings-modal {
+    width: 600px;
+    padding: 75px 0px;
+  }
+  .main .main__settings-modal.password-heading {
+    max-width: 270px;
+  }
+  .main .main__subscription {
+    padding: 40px 0px 110px;
+  }
+  .main .main__plan {
+    width: 230px;
+  }
+  .main .main__plan-price span {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .main .main__plan-date + .main__plan-date {
+    margin-top: 30px;
+  }
+  .main .main__plan-date + .main__plan-explanation {
+    margin-top: 70px;
+  }
+  .main .main__other-plans-info-content .main__content-heading {
+    max-width: 230px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .main .main__addItem {
+    padding: 40px 0px 120px;
+  }
+  .main .main__addItem-content {
+    padding: 40px 30px;
+  }
+  .main .main__addItem-content .form__content-input-wrapper {
+    width: 320px;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 45px;
+  }
+  .header__nav {
+    height: 72px;
+  }
+  .header__logo {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .header__login.button {
+    padding: 6px 14px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .main {
+    padding: 24px 0px 0px 0px;
+  }
+  .main__header .container {
+    row-gap: 24px;
+  }
+  .main__header-nav-item-text.desctop {
+    display: none;
+  }
+  .main__header-nav {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .main__header-nav-item.mobile {
+    width: 30px;
+    height: 40px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .main__header-nav-item.mobile img {
+    position: absolute;
+    top: -5px;
+    left: 3px;
+  }
+  .main__header-nav-item.desctop {
+    display: none;
+  }
+  .main__content {
+    padding: 40px 0px 100px;
+  }
+  .main__content-heading {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  .main__content-input-wrapper {
+    flex-direction: column-reverse;
+    row-gap: 20px;
+  }
+  .main__content-input-wrapper-img {
+    top: 88px;
+  }
+  .main__content-input {
+    padding: 14px 22px 14px 54px;
+  }
+  .main__content-card {
+    max-width: 210px;
+    padding: 12px 12px 18px;
+  }
+  .main__content-card-category-text {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+  .main__content-card-category-text + .main__content-card-heading {
+    margin-top: 4px;
+  }
+  .main__content-card-heading {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .main__content-card-row-item {
+    padding: 0px 4px;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .main__content-card-line + .main__content-card-geoPrice {
+    margin-top: 12px;
+  }
+  .main__content-card-geo img {
+    display: none;
+  }
+  .main__content .main__content {
+    padding: 40px 0px 60px;
+  }
+  .main__content .main__settings-accordion-content-form {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .main__content .form__content-part {
+    width: 100%;
+    gap: 16px;
+  }
+  .main__content .main__settings-accordion .form__content-part-btn {
+    margin-top: 8px;
+  }
+  .main__content .main__settings-accordion.second .form__content-part {
+    gap: 24px;
+  }
+  .main__content .main__settings-accordion.second .form__content-part-wrapper {
+    flex-direction: column;
+  }
+  .main__content .main__settings-accordion .form__content-input-wrapper {
+    width: 100%;
+    padding: 0px;
+  }
+  .main__content .main__settings-accordion .form__content-part-wrapper + .main__settings-accordion-content-form-heading {
+    margin-top: 0px;
+  }
+  .main__content .main__settings-accordion.second .form__content-part-wrapper:nth-child(4) {
+    margin-top: -16px;
+  }
+  .main__content .main__settings-accordion-content-form-heading + .main__settings-accordion .form__content-textarea {
+    margin-top: 8px;
+  }
+  .main__content .main__settings-accordion .form__content-textarea {
+    width: 100%;
+  }
+  .main__content .main__settings-accordion .form__content-textarea {
+    margin-bottom: 24px;
+  }
+  .main .main__settings-modal {
+    width: 440px;
+    padding: 60px 0px;
+  }
+  .main__settings-modal-heading {
+    max-width: 275px;
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .main__settings-modal-heading + .main__settings-modal-text {
+    margin-top: 16px;
+  }
+  .main__settings-modal-text + .main__settings-modal-btn {
+    margin-top: 40px;
+  }
+  .main__settings-modal.password .main__settings-modal-heading {
+    max-width: 250px;
+  }
+  .main__subscription {
+    padding: 40px 0px 90px;
+  }
+  .main__subscription .main__content-heading {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .main__subscription-line {
+    margin: 60px 0px;
+  }
+  .main__plan-row {
+    flex-wrap: wrap;
+    row-gap: 25px;
+  }
+  .main__plan-row .main__plan {
+    padding: 30px 25px;
+    width: 210px;
+  }
+  .main__plan-row > .main__plan-explanation {
+    max-width: 420px;
+    display: inline;
+  }
+  .main__plan-info .main__plan-explanation {
+    display: none;
+  }
+  .main__other-plans-row {
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+  .main__other-plans-row .main__plan {
+    flex-grow: 1;
+  }
+  .main__other-plans-info {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .main .main__other-plans-info-content .main__content-heading {
+    max-width: 400px;
+  }
+  .main__addItem {
+    padding: 40px 0px 90px;
+  }
+  .mail__addItem-form-inputs,
+  .main__content .form__content-part {
+    row-gap: 26px;
+  }
+  .main__content .form__content-part {
+    justify-content: center;
+  }
+  .form__content-input-wrapper {
+    row-gap: 4px;
+  }
+  .mail__addItem-form-inputs + .mail__addItem-form-media,
+  .mail__addItem-form-media + .main__addItem-description {
+    margin-top: 30px;
+  }
+  .mail__addItem-form-media-mainFile,
+  .mail__addItem-form-media-file {
+    width: 183px;
+  }
+  .mail__addItem-form-media-files {
+    margin: 0px auto;
+    max-width: 378px;
+  }
+  .main__addItem-add-media {
+    margin: 0px auto;
+  }
+  .main__addItem-description-text {
+    margin: 0 auto;
+    width: 380px;
+  }
+}
+@media (max-width: 479px) {
+  button {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .header__nav {
+    height: 65px;
+  }
+  .main__header-nav {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .main__content-heading {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+  .main__content-input-button.static {
+    padding: 16px 0px;
+    min-width: 100%;
+  }
+  .main__content-card {
+    max-width: 100%;
+  }
+  .main__loadMoreBtn {
+    width: 100%;
+  }
+  .main__settings .main__content-heading {
+    font-size: 18px;
+  }
+  .main__settings .main__content-heading span {
+    font-size: 14px;
+  }
+  .main__settings-accordion-content-head + .main__settings-accordion-content-form {
+    margin-top: 30px;
+  }
+  .main__content .main__settings-accordion-content-form {
+    row-gap: 40px;
+  }
+  .main__settings-accordion.second .form__content-part-wrapper {
+    row-gap: 12px;
+  }
+  .main__settings-accordion .form__content-part-btn {
+    width: 100%;
+  }
+  .main__content .main__settings-accordion .form__content-textarea {
+    margin-bottom: 0px;
+  }
+  .main .main__settings-modal {
+    width: 100vh;
+    height: 100vh;
+    padding: 0px;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .main__settings-modal-heading {
+    max-width: 195px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .main__settings-modal-heading + .main__settings-modal-text {
+    margin-top: 12px;
+  }
+  .main__settings-modal-text {
+    max-width: 240px;
+  }
+  .main__settings-modal-text + .main__settings-modal-btn {
+    margin-top: 40px;
+  }
+  .main__settings-modal.password .main__settings-modal-heading {
+    max-width: 140px;
+  }
+  .main__subscription .main__content-heading {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+  .main__subscription {
+    padding: 45px 0px 80px;
+  }
+  .main__plan-row {
+    flex-direction: column;
+  }
+  .main__plan-row .main__plan {
+    width: 100%;
+  }
+  .main__plan-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main .main__plan-date + .main__plan-date {
+    margin-top: 0px;
+  }
+  .main__other-plans-info-content {
+    align-items: stretch;
+    row-gap: 24px;
+  }
+  .mail__addItem-form-inputs,
+  .main__content .form__content-part {
+    row-gap: 12px;
+  }
+  .main .main__addItem-content .form__content-input-wrapper {
+    width: 100%;
+  }
+  .main .main__addItem-content .form__content-input-wrapper p {
+    font-size: 12px;
+  }
+  .mail__addItem-form-media-mainFile,
+  .mail__addItem-form-media-file {
+    width: 100%;
+    height: 60px;
+  }
+  .mail__addItem-form-media-mainFile-text {
+    max-width: 170px;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+  .main__addItem-description-text {
+    width: 100%;
+  }
+  .main__addItem > .wrapper {
+    margin-bottom: 10px;
+  }
+  .main__addItem-btn {
+    width: 100%;
+  }
+}/*# sourceMappingURL=media.css.map */

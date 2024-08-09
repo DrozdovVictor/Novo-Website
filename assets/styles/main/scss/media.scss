@@ -1,0 +1,616 @@
+@import '../../../../Ui_Kit/scss/variables/main/variables';
+@import '../../../../Ui_Kit/scss/media.scss';
+
+// До 1920px невкл
+@media ($laptop) {
+  // hero
+  .hero {
+    padding: 160px 0px 300px;
+
+    &__heading + &__button {
+      margin-top: 34px;
+    }
+  }
+
+  // about
+  .about {
+    h5 + &__title {
+      margin-top: 16px;
+    }
+
+    &__title {
+      max-width: 700px;
+    }
+
+    &__categories {
+      height: 400px;
+    }
+
+    &__category {
+      padding: 0px 16px 16px;
+      width: 225px;
+      height: 320px;
+      background: $about-gradient,
+        url('../../../Images/main/about/laptop/transport-laptop.png') no-repeat center;
+    }
+
+    &__category:nth-child(2) {
+      background: $about-gradient,
+        url('../../../Images/main/about/laptop/technic-laptop.png') no-repeat center;
+    }
+
+    &__category:nth-child(3) {
+      background: $about-gradient,
+        url('../../../Images/main/about/laptop/excavator-laptop.png') no-repeat center;
+    }
+
+    &__category:nth-child(4) {
+      background: $about-gradient,
+        url('../../../Images/main/about/laptop/equioment-laptop.png') no-repeat center;
+    }
+  }
+
+  // features
+  .features {
+    padding: 80px 0px 370px;
+    background: url('../../../Images/main/features/section-bg-laptop.png') no-repeat bottom center,
+      $section-bg-black;
+
+    &__list {
+      height: 90px;
+      justify-content: space-around;
+    }
+  }
+
+  // pricing
+  .pricing {
+    &__title + &__plans {
+      margin-top: 110px;
+    }
+
+    &__plan-title {
+      font-size: 40px;
+      line-height: 60px;
+    }
+  }
+
+  // steps
+  .steps {
+    &__container {
+      row-gap: 95px;
+    }
+
+    &__item {
+      column-gap: 100px;
+
+      &-title {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+
+    &__item.reverse {
+      flex-direction: row-reverse;
+      column-gap: 130px;
+    }
+
+    &__list + &__btn {
+      margin-top: 25px;
+    }
+  }
+
+  //footer
+  .footer {
+    padding: 40px 0px 20px;
+    &__logo-text {
+      max-width: 250px;
+    }
+
+    &__menu {
+      flex-direction: column;
+
+      &-link + &-link {
+        margin-top: -4px;
+      }
+    }
+  }
+}
+
+// До 1000px невкл
+@media ($tablet) {
+  //header
+  .header {
+    &__nav-menu {
+      column-gap: 40px;
+    }
+  }
+  // hero
+  .hero {
+    padding: 160px 0px 200px;
+    background: $header-gradient,
+      url('../../../Images/main/header/tractor-laptop.png') no-repeat center bottom;
+  }
+
+  // about
+  .about {
+    padding: 90px 0px 150px;
+    &__title {
+      max-width: 600px;
+    }
+
+    &__title + &__categories-wrapper {
+      margin-top: 20px;
+    }
+
+    &__categories {
+      height: 290px;
+    }
+
+    &__category {
+      width: 170px;
+      height: 230px;
+      background: $about-gradient,
+        url('../../../Images/main/about/tablet/transport-tablet.png') no-repeat center;
+    }
+
+    &__category:nth-child(2) {
+      background: $about-gradient,
+        url('../../../Images/main/about/tablet/technic-tablet.png') no-repeat center;
+    }
+
+    &__category:nth-child(3) {
+      background: $about-gradient,
+        url('../../../Images/main/about/tablet/exavator-tablet.png') no-repeat center;
+    }
+
+    &__category:nth-child(4) {
+      background: $about-gradient,
+        url('../../../Images/main/about/tablet/equipment-tablet.png') no-repeat center;
+    }
+  }
+
+  // features
+  .features {
+    padding: 80px 0px 350px;
+    background: url('../../../Images/main/features/section-bg-tablet.png') no-repeat bottom center,
+      $section-bg-black;
+  }
+
+  //pricing
+  .pricing {
+    padding: 150px 0px;
+
+    &__plan {
+      min-width: 230px;
+
+      &-title,
+      &-price-number {
+        font-size: 30px;
+        line-height: 45px;
+      }
+    }
+  }
+
+  //pricing modal
+  .pricing-modal {
+    &__content {
+      padding: 60px 80px;
+      &-close {
+        top: 16px;
+        right: 16px;
+      }
+
+      &-title {
+        max-width: 250px;
+      }
+
+      &-title + &-text {
+        margin-top: 16px;
+      }
+
+      &-text {
+        max-width: 235px;
+      }
+
+      &-text + &-form {
+        margin-top: 32px;
+      }
+    }
+  }
+
+  //steps
+  .steps {
+    padding: 100px 0px;
+
+    &__container {
+      row-gap: 80px;
+    }
+
+    &__item,
+    &__item.reverse {
+      column-gap: 80px;
+    }
+
+    &__list + &__btn {
+      margin-top: 40px;
+    }
+  }
+}
+
+// До 768px невкл
+@media ($largeMobile) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h6 {
+    text-align: center;
+  }
+
+  // header
+  .header {
+    &__nav {
+      height: 88px;
+
+      &-mobile-open-btn {
+        display: block;
+      }
+    }
+
+    &__login,
+    &__nav-menu {
+      display: none;
+    }
+  }
+
+  // hero
+  .hero {
+    padding: 210px 0px 50px;
+    background: $header-gradient-mobile,
+      url('../../../Images/main/header/tractor-tablet.png') no-repeat center;
+
+    &__container {
+      align-items: center;
+      row-gap: 8px;
+    }
+
+    &__heading {
+      max-width: 400px;
+    }
+
+    &__heading + &__button {
+      margin-top: 32px;
+    }
+  }
+
+  // about
+  .about {
+    padding: 80px 0px 120px;
+
+    h5 + &__title {
+      margin-top: 8px;
+    }
+
+    &__title {
+      max-width: 500px;
+    }
+
+    &__title + &__categories-wrapper {
+      margin-top: 40px;
+    }
+
+    &__categories {
+      height: auto;
+      display: grid;
+      justify-content: center;
+      grid-template-areas:
+        'item1 item2'
+        'item3 item4';
+      gap: 30px 20px;
+    }
+
+    &__category:first-child {
+      grid-area: 'item1';
+    }
+
+    &__category:nth-child(2) {
+      margin-top: 30px;
+      grid-area: 'item2';
+    }
+
+    &__category:nth-child(3) {
+      margin-top: -30px;
+      grid-area: 'item3';
+    }
+
+    &__category:nth-child(4) {
+      grid-area: 'item4';
+    }
+  }
+
+  // features
+  .features {
+    padding: 60px 0px 250px;
+    background: url('../../../Images/main/features/section-bg-largeModile.png') no-repeat bottom
+        center,
+      $section-bg-black;
+
+    &__list {
+      height: 70px;
+      justify-content: space-evenly;
+    }
+
+    &__item,
+    &__item:nth-child(2) {
+      max-width: 120px;
+    }
+  }
+
+  // pricing
+  .pricing {
+    padding: 120px 0px 100px;
+
+    &__subtitle + &__title {
+      margin-top: 8px;
+    }
+
+    &__title {
+      max-width: 350px;
+    }
+
+    &__title + &__plans {
+      margin-top: 60px;
+    }
+
+    &__plans {
+      flex-direction: column;
+      row-gap: 20px;
+      align-items: center;
+    }
+
+    &__plan {
+      min-width: 250px;
+    }
+
+    &__plans + &__ad {
+      margin-top: 170px;
+    }
+
+    &__ad {
+      width: 100%;
+      position: relative;
+      justify-content: center;
+
+      picture {
+        position: absolute;
+        bottom: 50px;
+        z-index: -1;
+      }
+
+      &-content {
+        padding: 40px 24px;
+        flex-grow: 0;
+        row-gap: 8px;
+
+        h5,
+        p {
+          max-width: 280px;
+          text-align: center;
+        }
+
+        p + button {
+          margin-top: 32px;
+        }
+
+        button {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  // steps
+  .steps {
+    padding: 80px 0px;
+
+    &__container {
+      row-gap: 60px;
+    }
+
+    &__list {
+      row-gap: 80px;
+    }
+
+    &__item,
+    &__item.reverse {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+
+    &__item-title {
+      text-align: center;
+    }
+
+    &__list + &__btn {
+      margin-top: 20px;
+    }
+  }
+
+  // footer
+  .footer {
+    &__container {
+      row-gap: 40px;
+    }
+    &__logo {
+      width: 100%;
+
+      h2 {
+        text-align: start;
+      }
+
+      &-text {
+        max-width: 320px;
+      }
+    }
+    &__menu {
+      padding-left: 45px;
+    }
+  }
+}
+
+// До 480px невкл
+@media ($mobile) {
+  // hero
+  .hero {
+    padding: 130px 0px 50px;
+    background: $header-gradient-mobile,
+      url('../../../Images/main/header/tractor-largeMobile.png') no-repeat center;
+
+    &__heading {
+      max-width: 280px;
+    }
+  }
+
+  //about
+  .about {
+    padding: 60px 0px 100px;
+
+    &__title + &__categories-wrapper {
+      margin-top: 40px;
+    }
+
+    &__categories-wrapper {
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+    }
+
+    &__categories-wrapper::-webkit-scrollbar {
+      display: none;
+    }
+
+    &__categories {
+      display: flex;
+      justify-content: flex-start;
+      column-gap: 10px;
+    }
+
+    &__category {
+      min-width: 170px;
+    }
+
+    &__category:nth-child(2),
+    &__category:nth-child(3) {
+      margin: 0px;
+    }
+
+    &__category-title {
+      max-width: 100px;
+    }
+  }
+
+  //features
+  .features {
+    padding: 50px 0px 190px;
+    background: url('../../../Images/main/features/section-bg-mobile.png') no-repeat bottom center,
+      $section-bg-black;
+
+    &__list {
+      height: 50px;
+      justify-content: space-between;
+    }
+
+    &__item {
+      max-width: 110px;
+    }
+
+    &__item:nth-child(2) {
+      max-width: 100px;
+    }
+  }
+
+  // pricing
+  .pricing {
+    padding: 100px 0px;
+
+    &__title + &__plans {
+      margin-top: 40px;
+    }
+
+    &__ad {
+      width: calc(100% + 40px);
+      margin-left: -20px;
+
+      &-content {
+        width: 100%;
+        align-items: center;
+      }
+    }
+  }
+
+  //pricing modal
+  .pricing-modal {
+    &__content {
+      width: 100%;
+      height: 100%;
+      padding: 90px 40px;
+      &-close {
+        top: 13px;
+        right: 13px;
+      }
+
+      &-title {
+        max-width: 210px;
+      }
+
+      &-text + &-form {
+        margin-top: 40px;
+      }
+
+      &-form {
+        div + button {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+
+  // steps
+  .steps {
+    &__container {
+      row-gap: 80px;
+    }
+
+    &__item,
+    &__item.reverse {
+      row-gap: 24px;
+    }
+
+    &__list + &__btn {
+      margin-top: 0px;
+    }
+  }
+
+  // footer
+  .footer {
+    padding: 30px 0px 20px;
+
+    &__logo,
+    &__menu,
+    &__socials {
+      padding: 0px;
+    }
+
+    &__menu-link {
+      max-width: 145px;
+    }
+  }
+}
+
+// До 320px невкл
+@media ($smallmobile) {
+  // hero
+  .hero {
+    background: $header-gradient-mobile,
+      url('../../../Images/main/header/tractor-mobile.png') no-repeat center;
+  }
+}

@@ -1,0 +1,344 @@
+@import '/assets/styles/seller/main/css/style.css';
+@import '/assets/styles/customer/main/css/style.css';
+@import '../../../../../Ui_Kit/scss/variables/main/variables';
+
+$black: rgba(37, 37, 37, 1);
+
+.header__login.button.profile {
+  color: $main-green;
+
+  transition: border-color 0.3s;
+}
+
+@mixin flexColumnPattern($rg: 0px) {
+  display: flex;
+  flex-direction: column;
+  row-gap: $rg;
+}
+
+.container {
+  align-items: start !important;
+}
+
+.main__header .container {
+  row-gap: 25px;
+}
+
+.main__heading + .main__header-nav {
+  margin-top: 15px;
+}
+.customer-pages-nav {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+
+  &__link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+
+    transition: color 0.3s;
+
+    &.active,
+    &:hover {
+      cursor: pointer;
+      color: $black;
+    }
+
+    &:before {
+      display: none;
+    }
+  }
+
+  img {
+    margin-top: 1px;
+  }
+}
+
+.main {
+  padding: 30px 0px 0px;
+
+  .main__content {
+    padding: 0px;
+  }
+
+  &__heading {
+    font-family: 'Manrope', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 67.5px;
+
+    color: $black;
+    letter-spacing: normal;
+    text-transform: none;
+  }
+}
+
+.main__content-input {
+  padding: 14px 22px 14px 54px;
+}
+
+.main__ads {
+  padding: 40px 0px 120px;
+  background-color: #f1f1f1;
+}
+
+.main__content-input-wrapper-img {
+  top: 14px;
+  left: 24px;
+}
+
+// Settings
+
+.main__content .main__settings {
+  padding: 50px 0px 200px;
+}
+
+// Messages
+
+$red: rgba(235, 87, 87, 1);
+$white-green: rgba(0, 150, 97, 1);
+$gray: rgba(139, 149, 158, 1);
+
+.main__messages {
+  padding: 50px 0px 120px;
+  @include flexColumnPattern(20px);
+
+  &.none {
+    display: none;
+  }
+
+  &-head {
+    padding: 27px 32px;
+
+    border-radius: 8px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    column-gap: 53px;
+
+    &-block {
+      width: 18px;
+      height: 18px;
+      border: 2px solid $gray;
+      border-radius: 4px;
+    }
+
+    &-names {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      &-item {
+        display: flex;
+        column-gap: 100px;
+      }
+    }
+  }
+
+  &-body {
+    @include flexColumnPattern(20px);
+
+    &-conversations-wrapper {
+      width: 100%;
+      display: flex;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+
+      border-radius: 8px;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    &-conversations {
+      padding: 10px 0px;
+      min-width: 100%;
+
+      background-color: white;
+    }
+
+    &-conversation {
+      padding: 20px 30px;
+      display: flex;
+      align-items: center;
+      column-gap: 53px;
+      border-bottom: 1px solid rgba(139, 149, 158, 0.1);
+
+      transition: background-color 0.3s;
+
+      &:last-child {
+        border: 0px;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgba(0, 150, 97, 0.1);
+      }
+
+      &.active .main__messages-quantity {
+        color: white;
+
+        span {
+          color: white;
+        }
+      }
+
+      &.active .main__messages-quantity {
+        display: inline;
+      }
+
+      &.active p {
+        color: $white-green;
+      }
+
+      &.active .main__messages-body-item.time {
+        justify-content: space-between;
+      }
+    }
+
+    &-names {
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 1;
+    }
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+
+      .main__messages-person-name {
+        min-width: 183px;
+      }
+
+      &.time {
+        min-width: 257px;
+
+        display: flex;
+        justify-content: end;
+      }
+    }
+
+    &-block {
+      position: relative;
+      width: 18px;
+      height: 18px;
+      border: 2px solid $gray;
+      border-radius: 4px;
+
+      transition: border-color 0.3s, background-color 0.3s;
+
+      &:hover {
+        cursor: pointer;
+        border-color: $red;
+      }
+
+      &:before {
+        display: none;
+        content: url('/assets/Images/customer/sellerPage/arrow.svg');
+        position: absolute;
+        top: -3px;
+        left: 1px;
+
+        width: 6px;
+        height: 10px;
+      }
+
+      &.active {
+        border-color: $red;
+        background-color: $red;
+      }
+
+      &.active:before {
+        display: block;
+      }
+    }
+
+    p {
+      color: $black;
+
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+
+    time {
+      color: rgba(139, 149, 158, 1);
+    }
+  }
+
+  &-quantity {
+    display: none;
+
+    padding: 0px 7px;
+    border-radius: 4px;
+    background-color: $main-green;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-remove-talking-btn {
+    padding: 12px 32px;
+    border: 0px;
+    background-color: rgba(235, 87, 87, 0.1);
+
+    display: none;
+    align-items: center;
+    column-gap: 8px;
+
+    transition: background-color 0.3s;
+
+    p {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 24px;
+
+      color: $red;
+      text-transform: capitalize;
+    }
+
+    &:hover {
+      background-color: rgba(235, 87, 87, 0.2);
+    }
+
+    &:active {
+      background-color: rgba(235, 87, 87, 0.3);
+    }
+
+    &.active {
+      display: flex;
+    }
+  }
+
+  &-page-nav {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+  }
+
+  &-btn-page {
+    padding: 16px 20px;
+
+    border: 0px;
+    background-color: rgba(0, 150, 97, 0.1);
+
+    display: flex;
+  }
+
+  &-btn-page:hover {
+    background-color: rgba(0, 150, 97, 0.2);
+  }
+
+  &-btn-page:active {
+    background-color: rgba(0, 150, 97, 0.3);
+  }
+}

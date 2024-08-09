@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seller info</title>
+    <link rel="shortcut icon" href="/assets/Images/logo-img.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/styles/customer/sellerPage/css/style.css" />
+    <link rel="stylesheet" href="/assets/styles/customer/sellerPage/css/media.css" />
+    <script src="/assets/scripts/customer/sellerPage.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <h4 class="header__logo">NOVO</h4>
+          <div class="header__nav-row">
+            <div class="header__profile" id="profile-content">
+              <button class="header__profile-btn" type="button" id="profile-btn">
+                <img
+                  class="header__profile-img"
+                  src="/assets/Images/customer/main/profile-user-img.svg"
+                  alt="profile-user-img"
+                />
+                <p>Мой профиль</p>
+              </button>
+              <div class="header__profile-arrow"></div>
+              <div class="header__profile-content">
+                <a href="customerProfile.html" class="header__profile-option">Избранное</a>
+                <a href="customerProfile.html" class="header__profile-option"
+                  >Сообщения <span>(4 новых)</span></a
+                >
+                <a href="customerProfile.html" class="header__profile-option">Настройки профиля</a>
+              </div>
+            </div>
+            <a
+              href="/src/sellerRegistration.html"
+              target="_blank"
+              class="header__login button profile"
+              id="header-login-btn"
+              >Стать продавцем</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <header class="seller-info">
+        <div class="container">
+          <h2 class="seller-info__heading">Продавец OTP Leasing</h2>
+          <div class="seller-info__row">
+            <button class="seller-info__btn" id="write-to-seller-btn">Написать продавцу</button>
+            <a href="#about" class="sellet-info__link">Про компанию</a>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <section class="seller-ads">
+          <button class="open-filter-btn" id="open-filter-btn">
+            <img src="/assets/Images/customer/sellerPage/search.svg" alt="filter" />
+            <p>Открыть фильтр</p>
+          </button>
+          <form class="seller-filter" id="filter">
+            <div class="seller-filter__category">
+              <div class="seller-filter__category-head">
+                <img src="/assets/Images/customer/sellerPage/plus.svg" alt="img" />
+                <h6 class="seller-filter__category-name">Цена, €</h6>
+              </div>
+              <div class="seller-filter__category-body">
+                <input
+                  class="seller-filter__category-input"
+                  type="text"
+                  form="filter"
+                  placeholder="С"
+                />
+                <input
+                  class="seller-filter__category-input"
+                  type="text"
+                  form="filter"
+                  placeholder="До"
+                />
+              </div>
+            </div>
+            <hr class="seller-filter__divider" />
+            <div class="seller-filter__category">
+              <div class="seller-filter__category-head">
+                <img src="/assets/Images/customer/sellerPage/plus.svg" alt="img" />
+                <h6 class="seller-filter__category-name">Тип транспорта</h6>
+              </div>
+              <div class="seller-filter__category-body">
+                <div class="seller-filter__category-accordion">
+                  <div class="seller-filter__category-accordion-head">
+                    <h6 class="seller-filter__category-accordion-heading">Грузовики</h6>
+                    <div class="seller-filter__category-accordion-arrow"></div>
+                  </div>
+                  <div class="seller-filter__category-accordion-body">
+                    <div class="seller-filter__category-accordion-option">Грузовики</div>
+                    <div class="seller-filter__category-accordion-option">Машины</div>
+                    <div class="seller-filter__category-accordion-option">Машины</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="seller-filter__divider" />
+            <div class="seller-filter__category">
+              <div class="seller-filter__category-head">
+                <img src="/assets/Images/customer/sellerPage/plus.svg" alt="img" />
+                <h6 class="seller-filter__category-name">Производитель</h6>
+              </div>
+              <div class="seller-filter__category-body">
+                <div class="seller-filter__category-option">
+                  <input
+                    class="seller-filter__category-option-input"
+                    type="checkbox"
+                    id="checkbox1"
+                    form="filter"
+                  />
+                  <label for="checkbox1" class="seller-filter__category-option-text"
+                    >Volkswagen</label
+                  >
+                  <input
+                    class="seller-filter__category-option-input"
+                    type="checkbox"
+                    id="checkbox2"
+                    form="filter"
+                  />
+                  <label for="checkbox2" class="seller-filter__category-option-text">Man</label>
+                  <input
+                    class="seller-filter__category-option-input"
+                    type="checkbox"
+                    id="checkbox3"
+                    form="filter"
+                  />
+                  <label for="checkbox3" class="seller-filter__category-option-text"
+                    >Mercedes benz</label
+                  >
+                  <input
+                    class="seller-filter__category-option-input"
+                    type="checkbox"
+                    id="checkbox4"
+                    form="filter"
+                  />
+                  <label for="checkbox4" class="seller-filter__category-option-text">Scania</label>
+                  <input
+                    class="seller-filter__category-option-input"
+                    type="checkbox"
+                    id="checkbox5"
+                    form="filter"
+                  />
+                  <label for="checkbox5" class="seller-filter__category-option-text">Volvo</label>
+                  <input
+                    class="seller-filter__category-option-input"
+                    type="checkbox"
+                    id="checkbox6"
+                    form="filter"
+                  />
+                  <label for="checkbox6" class="seller-filter__category-option-text">Iveco</label>
+                  <input
+                    class="seller-filter__category-option-input"
+                    type="checkbox"
+                    id="checkbox7"
+                    form="filter"
+                  />
+                  <label for="checkbox7" class="seller-filter__category-option-text"
+                    >Van Hool</label
+                  >
+                </div>
+              </div>
+            </div>
+            <hr class="seller-filter__divider" />
+            <div class="seller-filter__category">
+              <div class="seller-filter__category-head">
+                <img src="/assets/Images/customer/sellerPage/plus.svg" alt="img" />
+                <h6 class="seller-filter__category-name">Страна местонахождения</h6>
+              </div>
+              <div class="seller-filter__category-body">
+                <div class="seller-filter__category-accordion">
+                  <div class="seller-filter__category-accordion-head">
+                    <h6 class="seller-filter__category-accordion-heading">Грузовики</h6>
+                    <div class="seller-filter__category-accordion-arrow"></div>
+                  </div>
+                  <div class="seller-filter__category-accordion-body">
+                    <div class="seller-filter__category-accordion-option">Франция</div>
+                    <div class="seller-filter__category-accordion-option">Италия</div>
+                    <div class="seller-filter__category-accordion-option">Германия</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="seller-filter__divider" />
+            <div class="seller-filter__category">
+              <div class="seller-filter__category-head">
+                <img src="/assets/Images/customer/sellerPage/plus.svg" alt="img" />
+                <h6 class="seller-filter__category-name">Коробка передач</h6>
+              </div>
+              <div class="seller-filter__category-body">
+                <div class="seller-filter__category-option">
+                  <input
+                    class="seller-filter__category-option-input"
+                    type="checkbox"
+                    id="checkbox8"
+                    form="filter"
+                  />
+                  <label for="checkbox8" class="seller-filter__category-option-text"
+                    >Коробка автомат</label
+                  >
+                  <input
+                    class="seller-filter__category-option-input"
+                    type="checkbox"
+                    id="checkbox9"
+                    form="filter"
+                  />
+                  <label for="checkbox9" class="seller-filter__category-option-text"
+                    >Механика</label
+                  >
+                </div>
+              </div>
+            </div>
+            <hr class="seller-filter__divider" />
+            <div class="seller-filter__category">
+              <div class="seller-filter__category-head">
+                <img src="/assets/Images/customer/sellerPage/plus.svg" alt="img" />
+                <h6 class="seller-filter__category-name">Тип объявления</h6>
+              </div>
+              <div class="seller-filter__category-body">
+                <div class="seller-filter__category-option">
+                  <input
+                    class="seller-filter__category-option-input"
+                    type="checkbox"
+                    id="checkbox10"
+                    form="filter"
+                  />
+                  <label for="checkbox10" class="seller-filter__category-option-text"
+                    >Продажа</label
+                  >
+                  <input
+                    class="seller-filter__category-option-input"
+                    type="checkbox"
+                    id="checkbox11"
+                    form="filter"
+                  />
+                  <label for="checkbox11" class="seller-filter__category-option-text"
+                    >Аукцион</label
+                  >
+                  <input
+                    class="seller-filter__category-option-input"
+                    type="checkbox"
+                    id="checkbox12"
+                    form="filter"
+                  />
+                  <label for="checkbox12" class="seller-filter__category-option-text"
+                    >По запросу</label
+                  >
+                  <input
+                    class="seller-filter__category-option-input"
+                    type="checkbox"
+                    id="checkbox13"
+                    form="filter"
+                  />
+                  <label for="checkbox13" class="seller-filter__category-option-text">Лизинг</label>
+                  <input
+                    class="seller-filter__category-option-input"
+                    type="checkbox"
+                    id="checkbox14"
+                    form="filter"
+                  />
+                  <label for="checkbox14" class="seller-filter__category-option-text"
+                    >Сдется в аренду</label
+                  >
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="main__content-row" id="main-content-row">
+            <div class="main__content-card">
+              <img
+                class="main__content-card-img"
+                src="/assets/Images/seller/main/car-1.png"
+                alt="car-1"
+              />
+              <p class="main__content-card-category-text">Закрытые грузопассажирские автомобили</p>
+              <h6 class="main__content-card-heading ads">
+                Opel COMBO Airco Elct Ramen Stuurbediening
+              </h6>
+              <div class="main__content-card-row">
+                <div class="main__content-card-row-item">2015</div>
+                <div class="main__content-card-row-item">2 000 kg</div>
+                <div class="main__content-card-row-item">490 574 km</div>
+              </div>
+              <hr class="main__content-card-line" />
+              <div class="main__content-card-geoPrice">
+                <div class="main__content-card-geo">
+                  <img src="/assets/Images/seller/main/location.svg" alt="location" />
+                  <p class="main__content-card-geo-text">Garage van Nierop Netherlands</p>
+                </div>
+                <h3 class="main__content-card-price">1 500€</h3>
+              </div>
+              <div class="main__content-card-edit">
+                <a href="item.html" class="main__content-edit-card-btn" type="button">
+                  Редактировать
+                </a>
+                <button class="main__content-delete-card-btn" type="button">
+                  <img src="/assets/Images/seller/main/trash.svg" alt="trash" />
+                  Удалить
+                </button>
+              </div>
+            </div>
+            <div class="main__content-card">
+              <img
+                class="main__content-card-img"
+                src="/assets/Images/seller/main/car-2.png"
+                alt="car-1"
+              />
+              <p class="main__content-card-category-text">Закрытые пассажирские автомобили</p>
+              <h6 class="main__content-card-heading ads">
+                Setra 317 UL-GT/Klima/6 Gang/65 Sitz/Tüv:12.2020/Euro3
+              </h6>
+              <div class="main__content-card-row">
+                <div class="main__content-card-row-item">2011</div>
+                <div class="main__content-card-row-item">4500 kg</div>
+                <div class="main__content-card-row-item">320 000 km</div>
+              </div>
+              <hr class="main__content-card-line" />
+              <div class="main__content-card-geoPrice">
+                <div class="main__content-card-geo">
+                  <img src="/assets/Images/seller/main/location.svg" alt="location" />
+                  <p class="main__content-card-geo-text">Garage van Nierop Netherlands</p>
+                </div>
+                <h3 class="main__content-card-price">13 900€</h3>
+              </div>
+              <div class="main__content-card-edit">
+                <a href="item.html" class="main__content-edit-card-btn" type="button">
+                  Редактировать
+                </a>
+                <button class="main__content-delete-card-btn" type="button">
+                  <img src="/assets/Images/seller/main/trash.svg" alt="trash" />
+                  Удалить
+                </button>
+              </div>
+            </div>
+            <div class="main__content-card">
+              <img
+                class="main__content-card-img"
+                src="/assets/Images/seller/main/car-3.png"
+                alt="car-1"
+              />
+              <p class="main__content-card-category-text">Закрытые пассажирские автомобили</p>
+              <h6 class="main__content-card-heading ads">
+                Cobus Mercedes Benz 2700 S / Airport / Flughafenbus....
+              </h6>
+              <div class="main__content-card-row">
+                <div class="main__content-card-row-item">2015</div>
+                <div class="main__content-card-row-item">2 000 kg</div>
+                <div class="main__content-card-row-item">490 574 km</div>
+              </div>
+              <hr class="main__content-card-line" />
+              <div class="main__content-card-geoPrice">
+                <div class="main__content-card-geo">
+                  <img src="/assets/Images/seller/main/location.svg" alt="location" />
+                  <p class="main__content-card-geo-text">Garage van Nierop Netherlands</p>
+                </div>
+                <h3 class="main__content-card-price">1 500€</h3>
+              </div>
+              <div class="main__content-card-edit">
+                <a href="item.html" class="main__content-edit-card-btn" type="button">
+                  Редактировать
+                </a>
+                <button class="main__content-delete-card-btn" type="button">
+                  <img src="/assets/Images/seller/main/trash.svg" alt="trash" />
+                  Удалить
+                </button>
+              </div>
+            </div>
+            <div class="main__content-card" id="new-card">
+              <img
+                class="main__content-card-img"
+                src="/assets/Images/seller/main/car-4.png"
+                alt="car-1"
+              />
+              <p class="main__content-card-category-text">Закрытые грузопассажирские автомобили</p>
+              <h6 class="main__content-card-heading ads">
+                Mercedes-Benz V 250 d lang Avantgarde Edition 360° Stdhzg....
+              </h6>
+              <div class="main__content-card-row">
+                <div class="main__content-card-row-item">2015</div>
+                <div class="main__content-card-row-item">2 000 kg</div>
+                <div class="main__content-card-row-item">490 574 km</div>
+              </div>
+              <hr class="main__content-card-line" />
+              <div class="main__content-card-geoPrice">
+                <div class="main__content-card-geo">
+                  <img src="/assets/Images/seller/main/location.svg" alt="location" />
+                  <p class="main__content-card-geo-text">Garage van Nierop Netherlands</p>
+                </div>
+                <h3 class="main__content-card-price">54 300€</h3>
+              </div>
+              <div class="main__content-card-edit">
+                <a href="item.html" class="main__content-edit-card-btn" type="button">
+                  Редактировать
+                </a>
+                <button class="main__content-delete-card-btn" type="button">
+                  <img src="/assets/Images/seller/main/trash.svg" alt="trash" />
+                  Удалить
+                </button>
+              </div>
+            </div>
+            <div class="main__content-card">
+              <img
+                class="main__content-card-img"
+                src="/assets/Images/seller/main/car-5.png"
+                alt="car-1"
+              />
+              <p class="main__content-card-category-text">Грузовой фургон</p>
+              <h6 class="main__content-card-heading ads">
+                Nissan Eco T 100 Paardenvervoer / BJ: 1995 ledig gewicht
+              </h6>
+              <div class="main__content-card-row">
+                <div class="main__content-card-row-item">2015</div>
+                <div class="main__content-card-row-item">2 000 kg</div>
+                <div class="main__content-card-row-item">490 574 km</div>
+              </div>
+              <hr class="main__content-card-line" />
+              <div class="main__content-card-geoPrice">
+                <div class="main__content-card-geo">
+                  <img src="/assets/Images/seller/main/location.svg" alt="location" />
+                  <p class="main__content-card-geo-text">Garage van Nierop Netherlands</p>
+                </div>
+                <h3 class="main__content-card-price">3 100€</h3>
+              </div>
+              <div class="main__content-card-edit">
+                <a href="item.html" class="main__content-edit-card-btn" type="button">
+                  Редактировать
+                </a>
+                <button class="main__content-delete-card-btn" type="button">
+                  <img src="/assets/Images/seller/main/trash.svg" alt="trash" />
+                  Удалить
+                </button>
+              </div>
+            </div>
+            <div class="main__content-card">
+              <img
+                class="main__content-card-img"
+                src="/assets/Images/seller/main/car-6.png"
+                alt="car-1"
+              />
+              <p class="main__content-card-category-text">Грузовой фургон</p>
+              <h6 class="main__content-card-heading ads">
+                Renault Mascott 130.35 DC 363 / open laadbak 130
+              </h6>
+              <div class="main__content-card-row">
+                <div class="main__content-card-row-item">2015</div>
+                <div class="main__content-card-row-item">2 000 kg</div>
+                <div class="main__content-card-row-item">490 574 km</div>
+              </div>
+              <hr class="main__content-card-line" />
+              <div class="main__content-card-geoPrice">
+                <div class="main__content-card-geo">
+                  <img src="/assets/Images/seller/main/location.svg" alt="location" />
+                  <p class="main__content-card-geo-text">Garage van Nierop Netherlands</p>
+                </div>
+                <h3 class="main__content-card-price">4 850€</h3>
+              </div>
+              <div class="main__content-card-edit">
+                <a href="item.html" class="main__content-edit-card-btn" type="button">
+                  Редактировать
+                </a>
+                <button class="main__content-delete-card-btn" type="button">
+                  <img src="/assets/Images/seller/main/trash.svg" alt="trash" />
+                  Удалить
+                </button>
+              </div>
+            </div>
+            <div class="wrapper">
+              <button class="main__loadMoreBtn" type="button" id="add-card-btn">
+                Загрузить ещё
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <article class="seller-about" id="about">
+        <div class="container">
+          <h5 class="seller-about__heading">О компании</h5>
+          <h6 class="seller-about__subheading">Кто такой ОТП Лизинг?</h6>
+          <p class="seller-about__text">
+            «ОТП Лізинг» – універсальна лізингова компанія, входить до складу європейської
+            фінансової групи OTP Group, яка протягом десятиліть має надійну репутацію в усій Европі.
+            Компанія «ОТП Лізинг» була заснована в червні 2008 року як дочірнє підприємство АТ «ОТП
+            Банк». ОТП Лізинг – єдина лізингова компанія на українському ринку, що належить
+            міжнародній банківській групі, акції якої котируються на Лондонській фондовій біржі.
+            Портфель компанії на вересень 2019 року становить 8,2 млрд. грн
+          </p>
+          <h6 class="seller-about__subheading">Ну и еще пример текста</h6>
+          <p class="seller-about__text">
+            Предварительные выводы неутешительны: перспективное планирование в значительной степени
+            обусловливает важность укрепления моральных ценностей.
+          </p>
+        </div>
+      </article>
+      <section class="seller-geo">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.2110464028498!2d30.355448899849815!3d50.444002881029334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cb7d44707e93%3A0xe0cf57131fa0643e!2z0YPQuy4g0J7Qt9C10YDQvdCw0Y8sIDUsINCf0LXRgtGA0L7Qv9Cw0LLQu9C-0LLRgdC60LDRjyDQkdC-0YDRidCw0LPQvtCy0LrQsCwg0JrQuNC10LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDA4MTMw!5e0!3m2!1sru!2sby!4v1722863540355!5m2!1sru!2sby"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__logo">
+          <h2>Novo</h2>
+          <p class="footer__logo-text gray">
+            Маркетплейс коммерчиского транспорта и тяжелой техники
+          </p>
+        </div>
+        <nav class="footer__menu">
+          <p class="w100 gray">Покупателю</p>
+          <a href="#" class="footer__menu-link white">Служба поддержки</a>
+          <a href="#" class="footer__menu-link white">Стать продавцом</a>
+        </nav>
+        <div class="footer__socials">
+          <p class="small gray">Следите за нами</p>
+          <nav class="footer__socials-nav">
+            <a href="#" class="footer__social-link">
+              <img src="/assets/Images/main/footer/facebook.svg" alt="facebook" />
+            </a>
+            <a href="#" class="footer__social-link">
+              <img src="/assets/Images/main/footer/instagram.svg" alt="instagram" />
+            </a>
+            <a href="#" class="footer__social-link">
+              <img src="/assets/Images/main/footer/youtube.svg" alt="youtube" />
+            </a>
+          </nav>
+        </div>
+        <div class="footer__copyright w100">
+          <p class="footer__copyright-text small">© 2019–2020 Группа компаний «NOVO»</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
