@@ -390,6 +390,7 @@
       &-content {
         padding: 40px 24px;
         flex-grow: 0;
+        align-items: center;
         row-gap: 8px;
 
         h5,
@@ -398,7 +399,7 @@
           text-align: center;
         }
 
-        p + button {
+        p + .pricing__ad-btn.button {
           margin-top: 32px;
         }
 

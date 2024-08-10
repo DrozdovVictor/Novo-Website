@@ -325,6 +325,7 @@
   .pricing__ad-content {
     padding: 40px 24px;
     flex-grow: 0;
+    align-items: center;
     row-gap: 8px;
   }
   .pricing__ad-content h5,
@@ -332,7 +333,7 @@
     max-width: 280px;
     text-align: center;
   }
-  .pricing__ad-content p + button {
+  .pricing__ad-content p + .pricing__ad-btn.button {
     margin-top: 32px;
   }
   .pricing__ad-content button {

@@ -368,7 +368,7 @@ createCardBtn.addEventListener('click', () => {
       'afterbegin',
       `<img
                   class="main__content-card-img"
-                  src="/assets/Images/seller/main/car-4.png"
+                  src="../../assets/Images/seller/main/car-4.png"
                   alt="car-1"
                 />
                 <p class="main__content-card-category-text">
@@ -385,17 +385,17 @@ createCardBtn.addEventListener('click', () => {
                 <hr class="main__content-card-line" />
                 <div class="main__content-card-geoPrice">
                   <div class="main__content-card-geo">
-                    <img src="/assets/Images/seller/main/location.svg" alt="location" />
+                    <img src="../../assets/Images/seller/main/location.svg" alt="location" />
                     <p class="main__content-card-geo-text">Garage van Nierop Netherlands</p>
                   </div>
                   <h3 class="main__content-card-price">54 300€</h3>
                 </div>
                 <div class="main__content-card-edit">
-                  <a href="item.html" class="main__content-edit-card-btn" type="button">
+                  <a href="./item.html" class="main__content-edit-card-btn" type="button">
                     Редактировать
                   </a>
                   <button class="main__content-delete-card-btn" type="button">
-                    <img src="/assets/Images/seller/main/trash.svg" alt="trash" />
+                    <img src="../../assets/Images/seller/main/trash.svg" alt="trash" />
                     Удалить
                   </button>
         </div>`

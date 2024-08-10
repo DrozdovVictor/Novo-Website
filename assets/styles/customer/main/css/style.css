@@ -1,5 +1,5 @@
-@import '/assets/styles/entrance/css/style.css';
-@import '/Ui_Kit/css/style.css';
+@import '../../../../../assets/styles/entrance/css/style.css';
+@import '../../../../../Ui_Kit/css/style.css';
 /* Variables */
 h4 {
   font-family: "Manrope", sans-serif !important;
@@ -324,6 +324,14 @@ img + .main__content-search-card-heading {
   display: flex;
   justify-content: center;
 }
+.main__content-ads-row .wrapper a {
+  font-size: 14px;
+  padding: 14px 30px;
+}
+.main__content-ads-row .wrapper a:hover {
+  color: rgb(0, 150, 97);
+  background-color: transparent;
+}
 .main__content-ads-item {
   border-radius: 8px;
   background-color: white;
@@ -401,6 +409,13 @@ img + .main__content-search-card-heading {
 }
 .main__content-sellers-info-text + .main__content-sellers-info-btn {
   margin-top: 44px;
+}
+.main__content-sellers-info-btn.button {
+  font-size: 14px;
+}
+.main__content-sellers-info-btn.button:hover {
+  color: rgb(0, 150, 97);
+  background-color: transparent;
 }
 .main__content-sellers-imgs {
   padding: 55px 60px;

@@ -1,4 +1,4 @@
-@import '/assets/styles/buyerRegistration/css/media.css';
+@import '../../../../assets/styles/buyerRegistration/css/media.css';
 /* Variables */
 @media (max-width: 767px) {
   .header__nav {

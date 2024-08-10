@@ -1,5 +1,5 @@
-@import '/assets/styles/customer/customerProfile/css/media.css';
-@import '/assets/styles/sellerRegistration/css/style.css';
+@import '../../../../../assets/styles/customer/customerProfile/css/media.css';
+@import '../../../../../assets/styles/sellerRegistration/css/style.css';
 /* Variables */
 @media (max-width: 1919px) {
   h1 {

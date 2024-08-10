@@ -1,5 +1,5 @@
-@import '/assets/styles/seller/main/css/style.css';
-@import '/assets/styles/customer/main/css/style.css';
+@import '../../../../../assets/styles/seller/main/css/style.css';
+@import '../../../../../assets/styles/customer/main/css/style.css';
 @import '../../../../../Ui_Kit/scss/variables/main/variables';
 
 $black: #252525;
@@ -296,7 +296,7 @@ $gray: #8b959e;
     }
 
     &-input:checked + &-text:after {
-      content: url('/assets/Images/customer/sellerPage/arrow.svg');
+      content: url('../../../../Images/customer/sellerPage/arrow.svg');
       position: absolute;
       top: -2.5px;
       left: 3px;

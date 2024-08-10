@@ -1,5 +1,5 @@
-@import '/assets/styles/entrance/css/style.css';
-@import '/Ui_Kit/css/style.css';
+@import '../../../../../assets/styles/entrance/css/style.css';
+@import '../../../../../Ui_Kit/css/style.css';
 @import '../../../../../Ui_Kit/scss/variables/main/variables';
 
 $black: rgba(37, 37, 37, 1);
@@ -408,6 +408,16 @@ h6 {
         width: 100%;
         display: flex;
         justify-content: center;
+
+        a {
+          font-size: 14px;
+          padding: 14px 30px;
+
+          &:hover {
+            color: $main-green;
+            background-color: transparent;
+          }
+        }
       }
     }
 
@@ -488,6 +498,14 @@ h6 {
 
       &-text + &-btn {
         margin-top: 44px;
+      }
+
+      &-btn.button {
+        font-size: 14px;
+        &:hover {
+          color: $main-green;
+          background-color: transparent;
+        }
       }
     }
 

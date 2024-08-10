@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import '/assets/styles/seller/main/css/style.css';
-@import '/Ui_Kit/css/style.css';
+@import '../../../../../assets/styles/seller/main/css/style.css';
+@import '../../../../../Ui_Kit/css/style.css';
 /* Variables */
 picture img {
   width: 100%;

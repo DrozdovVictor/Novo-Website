@@ -1,5 +1,5 @@
-@import '/assets/styles/seller/main/css/style.css';
-@import '/assets/styles/customer/main/css/style.css';
+@import '../../../../../assets/styles/seller/main/css/style.css';
+@import '../../../../../assets/styles/customer/main/css/style.css';
 /* Variables */
 .header__login.button.profile {
   color: rgb(0, 150, 97);
@@ -73,6 +73,10 @@
 
 .main__content .main__settings {
   padding: 50px 0px 200px;
+}
+
+.main__settings .main__content-heading {
+  color: rgb(37, 37, 37);
 }
 
 .main__messages {
@@ -191,7 +195,7 @@
 }
 .main__messages-body-block:before {
   display: none;
-  content: url("/assets/Images/customer/sellerPage/arrow.svg");
+  content: url("../../../../Images/customer/sellerPage/arrow.svg");
   position: absolute;
   top: -3px;
   left: 1px;

@@ -1,6 +1,6 @@
-@import '/assets/styles/customer/customerProfile/css/style.css';
-@import '/Ui_Kit/css/style.css';
-@import '/assets/styles/sellerRegistration/css/style.css';
+@import '../../../../../assets/styles/customer/customerProfile/css/style.css';
+@import '../../../../../Ui_Kit/css/style.css';
+@import '../../../../../assets/styles/sellerRegistration/css/style.css';
 @import '../../../../../Ui_Kit/scss/variables/sellerRegistration/variables';
 
 @mixin flexColumnPattern($rg: 0px) {
@@ -339,6 +339,7 @@ $black: rgba(37, 37, 37, 1);
     }
 
     &-delete-card-btn:hover {
+      color: rgba(235, 87, 87, 1);
       background-color: rgba(235, 87, 87, 0.2);
     }
 
@@ -544,10 +545,13 @@ $black: rgba(37, 37, 37, 1);
 
   .main__content-heading {
     @include flexColumnPattern(8px);
-    span {
+    align-items: start;
+    a {
       font-size: 14px;
       font-weight: 700;
       line-height: 24px;
+
+      color: $main-green;
     }
   }
 

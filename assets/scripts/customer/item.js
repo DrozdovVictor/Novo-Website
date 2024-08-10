@@ -11,8 +11,8 @@ heartImg.addEventListener('click', () => {
   heartImg.classList.toggle('clicked')
 
   if (heartImg.classList.contains('clicked'))
-    heartImg.src = '/assets/Images/customer/item/heart-fill.svg'
-  else heartImg.src = '/assets/Images/customer/item/heart-empty.svg'
+    heartImg.src = '../../assets/Images/customer/item/heart-fill.svg'
+  else heartImg.src = '../../assets/Images/customer/item/heart-empty.svg'
 })
 
 // Scroll

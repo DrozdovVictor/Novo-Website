@@ -70,7 +70,6 @@ initNavMobile()
 function closeNavMobile() {
   navMobileListArr.forEach((el) => {
     el.addEventListener('click', function () {
-      console.log('xms')
       document.body.classList.remove('disable')
       navMobile.classList.remove('active')
       navMobile.style.display = 'none'
@@ -153,6 +152,8 @@ pricingFormSubmit.addEventListener('click', function () {
   pricingModalInputs.forEach(function (input) {
     if (input.value === '') {
       input.classList.add('invalid')
+    } else {
+      closePricingModal()
     }
   })
 })

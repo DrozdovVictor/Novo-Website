@@ -349,7 +349,7 @@ body {
       z-index: 2;
     }
 
-    &-btn {
+    &-btn.button {
       padding: 12px 22px;
     }
 
@@ -365,8 +365,15 @@ body {
       align-items: flex-start;
       row-gap: 16px;
 
-      p + button {
+      p + .pricing__ad-btn.button {
         margin-top: 24px;
+      }
+
+      .pricing__ad-btn.button {
+        color: white;
+        &:hover {
+          background-color: transparent;
+        }
       }
     }
   }
@@ -524,6 +531,15 @@ body {
   &__list + &__btn {
     margin-top: 40px;
   }
+
+  &__btn {
+    color: white;
+
+    &:hover {
+      color: white;
+      background-color: transparent;
+    }
+  }
 }
 
 .footer {
@@ -552,6 +568,7 @@ body {
   &__menu {
     display: flex;
     flex-wrap: wrap;
+    align-items: start;
     gap: 16px 60px;
 
     &-link {

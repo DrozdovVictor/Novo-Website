@@ -1,4 +1,4 @@
-@import '/assets/styles/seller/main/css/media.css';
+@import '../../../../../assets/styles/seller/main/css/media.css';
 /* Variables */
 @media (max-width: 1919px) {
   .header__logo {

@@ -1,5 +1,5 @@
-@import '/assets/styles/seller/item/css/style.css';
-@import '/assets/styles/customer/main/css/style.css';
+@import '../../../../../assets/styles/seller/item/css/style.css';
+@import '../../../../../assets/styles/customer/main/css/style.css';
 /* Variables */
 .header__login.button.profile {
   color: rgb(0, 150, 97);

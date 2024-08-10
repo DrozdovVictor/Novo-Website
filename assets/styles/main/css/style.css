@@ -282,7 +282,7 @@ h3 + .pricing__plan-details, .pricing__plan-price + .pricing__plan-details {
 .pricing__ad picture {
   z-index: 2;
 }
-.pricing__ad-btn {
+.pricing__ad-btn.button {
   padding: 12px 22px;
 }
 .pricing__ad-content {
@@ -296,8 +296,14 @@ h3 + .pricing__plan-details, .pricing__plan-price + .pricing__plan-details {
   align-items: flex-start;
   row-gap: 16px;
 }
-.pricing__ad-content p + button {
+.pricing__ad-content p + .pricing__ad-btn.button {
   margin-top: 24px;
+}
+.pricing__ad-content .pricing__ad-btn.button {
+  color: white;
+}
+.pricing__ad-content .pricing__ad-btn.button:hover {
+  background-color: transparent;
 }
 
 .pricing-modal {
@@ -438,6 +444,13 @@ h3 + .pricing__plan-details, .pricing__plan-price + .pricing__plan-details {
 .steps__list + .steps__btn {
   margin-top: 40px;
 }
+.steps__btn {
+  color: white;
+}
+.steps__btn:hover {
+  color: white;
+  background-color: transparent;
+}
 
 .footer {
   padding: 60px 0px 30px;
@@ -462,6 +475,7 @@ h3 + .pricing__plan-details, .pricing__plan-price + .pricing__plan-details {
 .footer__menu {
   display: flex;
   flex-wrap: wrap;
+  align-items: start;
   gap: 16px 60px;
 }
 .footer__menu-link {

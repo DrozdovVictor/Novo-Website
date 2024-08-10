@@ -1,5 +1,5 @@
-@import '/assets/styles/seller/main/css/style.css';
-@import '/assets/styles/customer/main/css/style.css';
+@import '../../../../../assets/styles/seller/main/css/style.css';
+@import '../../../../../assets/styles/customer/main/css/style.css';
 @import '../../../../../Ui_Kit/scss/variables/main/variables';
 
 $black: rgba(37, 37, 37, 1);
@@ -92,6 +92,10 @@ $black: rgba(37, 37, 37, 1);
 
 .main__content .main__settings {
   padding: 50px 0px 200px;
+}
+
+.main__settings .main__content-heading {
+  color: $black;
 }
 
 // Messages
@@ -237,7 +241,7 @@ $gray: rgba(139, 149, 158, 1);
 
       &:before {
         display: none;
-        content: url('/assets/Images/customer/sellerPage/arrow.svg');
+        content: url('../../../../Images/customer/sellerPage/arrow.svg');
         position: absolute;
         top: -3px;
         left: 1px;

@@ -35,8 +35,8 @@ filterCategories.forEach((category) => {
     const categoryImg = category.querySelector('img')
 
     if (category.classList.contains('active'))
-      categoryImg.src = '/assets/Images/customer/sellerPage/minus.svg'
-    else categoryImg.src = '/assets/Images/customer/sellerPage/plus.svg'
+      categoryImg.src = '../../assets/Images/customer/sellerPage/minus.svg'
+    else categoryImg.src = '../../assets/Images/customer/sellerPage/plus.svg'
   })
 
   const categoryBody = category.querySelector('.seller-filter__category-body')
